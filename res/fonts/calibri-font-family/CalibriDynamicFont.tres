@@ -4,7 +4,7 @@
 font_path = "res://res/fonts/calibri-font-family/calibri-bold.ttf"
 
 [resource]
-size = 22
+size = 21
 use_mipmaps = true
 use_filter = true
 font_data = SubResource( 1 )
