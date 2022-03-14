@@ -7,7 +7,7 @@ export var monthScene: PackedScene
 func _ready():
 	for i in range(12):
 		var newMonth = monthScene.instance()
-		var year = 2022 #this shouldn't be constant
+		var year = 2022 #this shouldn't be constant	
 		var newMonthDate: Dictionary = {
 			"year": year,
 			"month": i + 1,

@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://res/fonts/fredoka/fredokaDynamic32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/yearView/Day.gd" type="Script" id=2]
+
+[node name="Day" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1242.0
+margin_bottom = -698.0
+rect_min_size = Vector2( 38, 22 )
+rect_pivot_offset = Vector2( -129, -35 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayRect" type="ColorRect" parent="."]
+margin_right = 38.0
+margin_bottom = 22.0
+rect_min_size = Vector2( 38, 22 )
+rect_pivot_offset = Vector2( -59, -8 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="DayNumber" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -19.0
+margin_top = -11.0
+margin_right = 133.0
+margin_bottom = 68.0
+rect_min_size = Vector2( 22, 22 )
+rect_scale = Vector2( 0.25, 0.25 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+margin_right = 38.0
+margin_bottom = 22.0
+border_color = Color( 0, 0, 0, 1 )
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="LongAppointmentGrid" type="GridContainer" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -11.0
+margin_right = 6.0
+margin_bottom = 11.0
+custom_constants/vseparation = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
