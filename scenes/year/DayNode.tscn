@@ -17,6 +17,7 @@ __meta__ = {
 margin_right = 38.0
 margin_bottom = 22.0
 border_color = Color( 0, 0, 0, 1 )
+editor_only = false
 __meta__ = {
 "_edit_use_anchors_": true
 }

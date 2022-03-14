@@ -4,47 +4,153 @@
 [ext_resource path="res://scenes/year/Month.gd" type="Script" id=2]
 [ext_resource path="res://scenes/year/DayNode.tscn" type="PackedScene" id=3]
 
-[node name="Month" type="Node2D"]
+[node name="Month" type="Control"]
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 318, 200 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 dayScene = ExtResource( 3 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_top = 1.0
-margin_right = 320.0
-margin_bottom = 201.0
+[node name="MonthRect" type="ColorRect" parent="."]
+margin_right = 318.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 color = Color( 0.85098, 0.85098, 0.85098, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GridContainer" type="GridContainer" parent="ColorRect"]
-margin_left = 15.0
-margin_top = 45.0
-margin_right = 305.0
-margin_bottom = 197.0
-rect_min_size = Vector2( 290, 150 )
-columns = 7
+[node name="MonthName" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -160.0
+margin_top = 4.0
+margin_right = 160.0
+margin_bottom = 26.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Enero"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="ColorRect"]
-margin_left = 15.0
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -145.0
 margin_top = 26.0
-margin_right = 305.0
+margin_right = 145.0
 margin_bottom = 42.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MonthName" type="Label" parent="."]
-margin_top = 2.0
-margin_right = 319.0
-margin_bottom = 25.0
+[node name="WeekGrid" type="GridContainer" parent="ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -141.0
+margin_top = -10.0
+margin_right = 149.0
+margin_bottom = 12.0
+columns = 7
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Domingo" type="Label" parent="ColorRect/WeekGrid"]
+margin_right = 37.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
-text = "January"
+text = "D"
 align = 1
+valign = 1
+
+[node name="Lunes" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 41.0
+margin_right = 78.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "L"
+align = 1
+valign = 1
+
+[node name="Martes" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 82.0
+margin_right = 119.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "M"
+align = 1
+valign = 1
+
+[node name="Miercoles" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 123.0
+margin_right = 160.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "X"
+align = 1
+valign = 1
+
+[node name="Jueves" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 164.0
+margin_right = 201.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "J"
+align = 1
+valign = 1
+
+[node name="Viernes" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 205.0
+margin_right = 242.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "V"
+align = 1
+valign = 1
+
+[node name="Sabado" type="Label" parent="ColorRect/WeekGrid"]
+margin_left = 246.0
+margin_right = 283.42
+margin_bottom = 22.0
+rect_min_size = Vector2( 37.42, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "S"
+align = 1
+valign = 1
+
+[node name="DayGrid" type="GridContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -145.0
+margin_top = -155.0
+margin_right = 145.0
+margin_bottom = -3.0
+rect_min_size = Vector2( 290, 150 )
+columns = 7
 __meta__ = {
 "_edit_use_anchors_": false
 }
