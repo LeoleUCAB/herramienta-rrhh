@@ -6,9 +6,11 @@
 [ext_resource path="res://res/fonts/fredoka/fredokaDynamic32.tres" type="DynamicFont" id=4]
 
 [node name="Month" type="Control"]
-margin_right = 200.0
-margin_bottom = 200.0
-rect_min_size = Vector2( 318, 200 )
+margin_right = 8876.0
+margin_bottom = 5600.0
+rect_min_size = Vector2( 8876, 5600 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -16,8 +18,8 @@ __meta__ = {
 dayScene = ExtResource( 1 )
 
 [node name="MonthRect" type="ColorRect" parent="."]
-margin_right = 318.0
-margin_bottom = 200.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.85098, 0.85098, 0.85098, 1 )
@@ -28,10 +30,12 @@ __meta__ = {
 [node name="MonthName" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -159.0
-margin_right = 1109.0
-margin_bottom = 79.0
-rect_scale = Vector2( 0.25, 0.25 )
+anchor_bottom = 0.099
+margin_left = -4438.0
+margin_right = -3170.0
+margin_bottom = -475.4
+rect_scale = Vector2( 7, 7 )
+size_flags_horizontal = 3
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 3 )
 text = "Enero"
@@ -43,23 +47,21 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -145.0
-margin_top = 26.0
-margin_right = 145.0
-margin_bottom = 42.0
+margin_left = -4060.0
+margin_top = 731.0
+margin_right = -3770.0
+margin_bottom = 747.0
+rect_scale = Vector2( 28, 28 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="WeekGrid" type="GridContainer" parent="ColorRect"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -141.0
-margin_top = -10.0
-margin_right = 1019.0
-margin_bottom = 69.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -2.0
+margin_right = 870.0
+margin_bottom = 61.0
 rect_scale = Vector2( 0.25, 0.25 )
 columns = 7
 __meta__ = {
@@ -143,15 +145,15 @@ align = 1
 valign = 1
 
 [node name="DayGrid" type="GridContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -145.0
-margin_top = -155.0
-margin_right = 145.0
+margin_left = 378.0
+margin_top = 1302.0
+margin_right = -378.0
 margin_bottom = -3.0
 rect_min_size = Vector2( 290, 150 )
+custom_constants/vseparation = 112
+custom_constants/hseparation = 112
 columns = 7
 __meta__ = {
 "_edit_use_anchors_": false
