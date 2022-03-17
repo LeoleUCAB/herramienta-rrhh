@@ -10,6 +10,7 @@ margin_right = 0.319946
 margin_bottom = -0.320068
 rect_min_size = Vector2( 1064, 616 )
 rect_pivot_offset = Vector2( -129, -35 )
+mouse_filter = 2
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -20,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 rect_min_size = Vector2( 1064, 616 )
 rect_pivot_offset = Vector2( -59, -8 )
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
@@ -52,6 +54,7 @@ anchor_bottom = 1.0
 margin_right = -1026.0
 margin_bottom = -594.0
 rect_scale = Vector2( 28, 28 )
+mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
 editor_only = false
 __meta__ = {
@@ -63,6 +66,7 @@ __meta__ = {
 anchor_right = 0.158
 anchor_bottom = 1.0
 margin_right = -0.112015
+mouse_filter = 2
 custom_constants/vseparation = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -73,6 +77,7 @@ anchor_left = 0.842
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 0.111938
+mouse_filter = 2
 custom_constants/vseparation = 1
 __meta__ = {
 "_edit_use_anchors_": false,

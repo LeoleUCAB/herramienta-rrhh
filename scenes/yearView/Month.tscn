@@ -9,6 +9,7 @@
 margin_right = 8876.0
 margin_bottom = 5600.0
 rect_min_size = Vector2( 8876, 5600 )
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource( 2 )
@@ -20,6 +21,7 @@ dayScene = ExtResource( 1 )
 [node name="MonthRect" type="ColorRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.85098, 0.85098, 0.85098, 1 )
@@ -52,6 +54,7 @@ margin_top = 731.0
 margin_right = -3770.0
 margin_bottom = 747.0
 rect_scale = Vector2( 28, 28 )
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -63,6 +66,7 @@ margin_top = -2.0
 margin_right = 870.0
 margin_bottom = 61.0
 rect_scale = Vector2( 0.25, 0.25 )
+mouse_filter = 2
 columns = 7
 __meta__ = {
 "_edit_use_anchors_": false
@@ -152,6 +156,7 @@ margin_top = 1302.0
 margin_right = -378.0
 margin_bottom = -3.0
 rect_min_size = Vector2( 290, 150 )
+mouse_filter = 2
 custom_constants/vseparation = 112
 custom_constants/hseparation = 112
 columns = 7
