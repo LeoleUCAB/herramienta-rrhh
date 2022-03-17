@@ -4,6 +4,7 @@ const MAX_ZOOM_LEVEL = 0.5
 const MIN_ZOOM_LEVEL = 28
 const ZOOM_INCREMENT = 0.05
 const CALENDAR_WIDTH = 1280
+const CALENDAR_HEIGHT = 720
 
 signal moved()
 signal zoomed()
@@ -18,10 +19,16 @@ func _ready():
 
 func _process(delta):
 	deltaValue = delta
+	
+	## If camera moves out of bounds, it moves it back in bounds.
 	if get_offset()[0] < 0:
 		set_offset(Vector2(0, get_offset()[1]))
-	if get_offset()[0] > CALENDAR_WIDTH * ZOOM_INCREMENT * ((MIN_ZOOM_LEVEL - zoom[0]) * 20):
+	elif get_offset()[0] > CALENDAR_WIDTH * ZOOM_INCREMENT * ((MIN_ZOOM_LEVEL - zoom[0]) * 20):
 		set_offset(Vector2(CALENDAR_WIDTH * ZOOM_INCREMENT * ((MIN_ZOOM_LEVEL - zoom[0]) * 20), get_offset()[1]))
+	if get_offset()[1] < 0:
+		set_offset(Vector2(get_offset()[0], 0))
+	elif get_offset()[1] > CALENDAR_HEIGHT * ZOOM_INCREMENT * ((MIN_ZOOM_LEVEL - zoom[0]) * 20):
+		set_offset(Vector2(get_offset()[0], CALENDAR_HEIGHT * ZOOM_INCREMENT * ((MIN_ZOOM_LEVEL - zoom[0]) * 20)))
 
 func _input(event):
 	if event.is_action_pressed("cam_drag"):
@@ -34,7 +41,6 @@ func _input(event):
 		_update_zoom(ZOOM_INCREMENT * deltaValue * 100, get_local_mouse_position())
 	elif event is InputEventMouseMotion && _drag:
 		set_offset(Vector2(get_offset()[0] - event.relative[0]*_current_zoom_level, get_offset()[1]))
-		prints(get_offset(), zoom)
 
 func _update_zoom(incr, zoom_anchor):
 	var old_zoom = _current_zoom_level

@@ -4,10 +4,11 @@ onready var grid = $MonthGrid
 
 export var monthScene: PackedScene
 
+var year: int = 1900 setget setYear
+
 func _ready():
 	for i in range(12):
 		var newMonth = monthScene.instance()
-		var year = 2022 #this shouldn't be constant	
 		var newMonthDate: Dictionary = {
 			"year": year,
 			"month": i + 1,
@@ -45,4 +46,7 @@ func getDaysInMonth(month, year):
 	else:
 		daysInMonth = 31 - ((month - 1) % 7 % 2) #it just works don't worry about it: http://www.dispersiondesign.com/articles/time/number_of_days_in_a_month
 	return daysInMonth
+	
+func setYear(value):
+	year = value
 
