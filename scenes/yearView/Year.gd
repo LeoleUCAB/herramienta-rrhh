@@ -1,12 +1,14 @@
 extends Control
 
 onready var grid = $MonthGrid
+onready var yearNumber = $YearNumber
 
 export var monthScene: PackedScene
 
 var year: int = 1900 setget setYear
 
 func _ready():
+	yearNumber.text = year as String
 	for i in range(12):
 		var newMonth = monthScene.instance()
 		var newMonthDate: Dictionary = {
