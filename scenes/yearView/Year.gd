@@ -24,13 +24,13 @@ func _ready():
 			"year": year,
 			"month": i + 1,
 			"weekStart": weekStart,
-			"daysInMonth": getDaysInMonth(i+1, year)
+			"daysInMonth": getDaysInMonth(i+1)
 		}
 		newMonth.init(initDict)
 		grid.add_child(newMonth)
 	pass
 	
-func getDaysInMonth(month, year):
+func getDaysInMonth(month):
 	var isLeapYear: bool
 	var daysInMonth: int
 	if (year % 4 == 0):
