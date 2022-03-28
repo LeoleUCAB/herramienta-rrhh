@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Calendario MANTIA"
-run/main_scene="res://Calendar.tscn"
+run/main_scene="res://scenes/yearView/YearRoulette.tscn"
 config/icon="res://icon.png"
 
 [display]
