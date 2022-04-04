@@ -1,12 +1,13 @@
-extends ColorRect
+extends Control
 
-# Called when the node enters the scene tree for the first time.
+onready var monthRect = $MonthRect
+
+var year: int = 1900 setget setYear
+
 func _ready():
 	for i in 5:
-		rect_size += Vector2(0, 933)
+		monthRect.rect_size += Vector2(0, 933)
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func setYear(value):
+	year = value

@@ -15,6 +15,7 @@ __meta__ = {
 [node name="GridContainer" type="GridContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 custom_constants/vseparation = 0
 custom_constants/hseparation = 0
 columns = 7
@@ -29,7 +30,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 3.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect1"]
@@ -49,8 +50,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -63,7 +64,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect2"]
@@ -83,8 +84,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -97,7 +98,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect3"]
@@ -117,8 +118,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -131,7 +132,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect4"]
@@ -151,8 +152,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -165,7 +166,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect5"]
@@ -185,8 +186,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -199,7 +200,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect6"]
@@ -219,8 +220,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -233,7 +234,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 2.0
+border_width = 10.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect7"]
@@ -253,8 +254,8 @@ margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
 rect_pivot_offset = Vector2( 63, 0 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "01"
 __meta__ = {
 "_edit_use_anchors_": false
