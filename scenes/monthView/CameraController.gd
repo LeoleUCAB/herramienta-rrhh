@@ -1,7 +1,7 @@
 extends Camera2D
 
 const MAX_ZOOM_LEVEL = 0.5
-const MIN_ZOOM_LEVEL = 28
+const MIN_ZOOM_LEVEL = 6.925
 const ZOOM_INCREMENT = 0.05
 const CALENDAR_WIDTH = 1280
 const CALENDAR_HEIGHT = 720
@@ -11,7 +11,7 @@ const CALENDAR_HEIGHT = 720
 
 var deltaValue = 0
 
-var _current_zoom_level = 28
+var _current_zoom_level = 6.925
 var _drag = false
 
 func _ready():

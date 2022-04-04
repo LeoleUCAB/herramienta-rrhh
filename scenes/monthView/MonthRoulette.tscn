@@ -1,4 +1,9 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/monthView/ScrollContainer.gd" type="Script" id=1]
+[ext_resource path="res://scenes/monthView/CameraController.gd" type="Script" id=2]
+[ext_resource path="res://scenes/monthView/Month.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/monthView/LoadingMonth.tscn" type="PackedScene" id=4]
 
 [node name="MonthRoulette" type="Node2D"]
 
@@ -6,9 +11,12 @@
 margin_right = 12.0
 margin_bottom = 12.0
 rect_min_size = Vector2( 8876, 5600 )
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+monthScene = ExtResource( 3 )
+loadingPlaceholderScene = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
 margin_right = 8876.0
@@ -19,4 +27,7 @@ rect_min_size = Vector2( 8876, 5600 )
 position = Vector2( -0.00488281, -0.00634766 )
 anchor_mode = 0
 current = true
-zoom = Vector2( 6.9, 6.9 )
+zoom = Vector2( 6.925, 6.925 )
+script = ExtResource( 2 )
+
+[connection signal="scroll_ended" from="ScrollContainer" to="ScrollContainer" method="_on_scroll_ended"]

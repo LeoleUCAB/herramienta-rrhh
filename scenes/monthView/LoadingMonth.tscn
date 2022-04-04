@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/monthView/LoadingMonth.gd" type="Script" id=1]
+
+[node name="Month" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = 280.0
+rect_min_size = Vector2( 720, 1000 )
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MonthRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 7596.0
+margin_bottom = -67.0
+rect_min_size = Vector2( 8876, 933 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.85098, 0.85098, 0.85098, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

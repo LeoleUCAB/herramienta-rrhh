@@ -1,0 +1,1434 @@
+Asistencia C.A.
+Calle A hacia avenida Principal, Sector 2                                                  mar., 29 mar.
+                REPORTE MARCAJES POR TRABAJADOR
+                                                                                          Página 1 de 207
+   CODIGO: 3623182  APELLIDO:  CARRERO  LUZ MARINA
+   Fecha                   Hora Marcaje              Dispositivo
+   vie. 25 sept. 2020      07:31 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 2 de 207
+CODIGO: 4545458  APELLIDO:  VIANA SANABRIA FRANKLIN RICARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:24 am                  Inproceca I
+vie. 25 sept. 2020      07:54 am                  Inproceca I
+vie. 02 oct. 2020       12:36 pm                  Inproceca I
+vie. 02 oct. 2020       01:21 pm                  Inproceca I
+mar. 06 oct. 2020       12:26 pm                  Inproceca I
+mar. 06 oct. 2020       01:23 pm                  Inproceca I
+mar. 06 oct. 2020       04:02 pm                  Inproceca I
+mar. 06 oct. 2020       04:02 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 3 de 207
+CODIGO: 5005959  APELLIDO:  CASAÑAS ENRIQUE DAVID
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 4 de 207
+CODIGO: 5532486  APELLIDO:  SANZ BRICEÑO  WOLFGANG ALEJANDRO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:26 am                  Frimaca
+lun. 05 oct. 2020       09:14 am                  Frimaca
+lun. 05 oct. 2020       04:09 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 5 de 207
+CODIGO: 5703058  APELLIDO:  GAMARDO MARY CRUZ
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:55 am                  Almacenes Guacar
+mar. 06 oct. 2020       06:56 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 6 de 207
+CODIGO: 5789241  APELLIDO:  SANCHEZ CABRERA JOSE ERNESTO
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       06:57 am                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 7 de 207
+CODIGO: 6316493  APELLIDO:  VERA NIÑO  CARLOS ERNESTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+vie. 02 oct. 2020       08:55 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:31 pm                  Almacenes Guacar
+vie. 02 oct. 2020       01:26 pm                  Inproceca I
+mar. 06 oct. 2020       12:41 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 8 de 207
+CODIGO: 6336065  APELLIDO:  LOBO PEÑA  ADELIS JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                           Página 9 de 207
+CODIGO: 6396891  APELLIDO:  VELASQUEZ RONDON YAMIR
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:05 am                  Inproceca I
+mar. 06 oct. 2020       01:08 pm                  Inproceca I
+mar. 06 oct. 2020       01:51 pm                  Inproceca I
+mar. 06 oct. 2020       03:59 pm                  Inproceca I
+mar. 06 oct. 2020       04:09 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 10 de 207
+CODIGO: 6517053  APELLIDO:  JIMENEZ OJEDA ROSA VIRGINIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+vie. 02 oct. 2020       03:03 pm                  Frimaca
+lun. 05 oct. 2020       06:58 am                  Frimaca
+mar. 06 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       03:12 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 11 de 207
+CODIGO: 6840462  APELLIDO:  DELGADO TORRES LUIS ALFONSO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+mar. 06 oct. 2020       12:48 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 12 de 207
+CODIGO: 6841252  APELLIDO:  SOTO MONTESINO PABLO MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:40 am                  Inproceca I
+vie. 02 oct. 2020       11:54 am                  Inproceca I
+mar. 06 oct. 2020       11:54 am                  Inproceca I
+mar. 06 oct. 2020       01:04 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 13 de 207
+CODIGO: 6963104  APELLIDO:  MOLINA CHAPELLIN  GERALDIN ENRIQUETA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:07 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 14 de 207
+CODIGO: 6978969  APELLIDO:  PALACIOS OSORIO LUIS EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:35 am                  Inproceca I
+vie. 02 oct. 2020       12:47 pm                  Inproceca I
+vie. 02 oct. 2020       01:43 pm                  Inproceca I
+mar. 06 oct. 2020       12:30 pm                  Inproceca I
+mar. 06 oct. 2020       12:32 pm                  Inproceca I
+mar. 06 oct. 2020       01:31 pm                  Inproceca I
+mar. 06 oct. 2020       04:10 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 15 de 207
+CODIGO: 8749527  APELLIDO:  MONTEZUMA HERNANDEZ  BERNARDO DANIEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 16 de 207
+CODIGO: 8752693  APELLIDO:  TORRES  CRUZ  MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 17 de 207
+CODIGO: 8764618  APELLIDO:  ACEVEDO PEREZ GUSTAVO DE JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:11 am                  Inproceca I
+vie. 25 sept. 2020      06:11 am                  Inproceca I
+mar. 06 oct. 2020       04:02 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 18 de 207
+CODIGO: 8785805  APELLIDO:  FRANCO ELIAZAR ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:32 am                  Inproceca I
+mar. 06 oct. 2020       04:02 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 19 de 207
+CODIGO: 8976476  APELLIDO:  FIGUEROA RAMON DEL VALLE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:44 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 20 de 207
+CODIGO: 9398728  APELLIDO:  VERA ARCAYA PEDRO NOLASCO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+lun. 05 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       07:19 am                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 21 de 207
+CODIGO: 9877645  APELLIDO:  ROJAS  BERGIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:47 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:05 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 22 de 207
+CODIGO: 9894371  APELLIDO:  LARA CARLOS MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:55 am                  Frimaca
+lun. 05 oct. 2020       06:57 am                  Frimaca
+lun. 05 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       07:18 am                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 23 de 207
+CODIGO: 10091589 APELLIDO:  OROZCO ZAPATA JOSE MANUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Inproceca I
+mar. 06 oct. 2020       04:00 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 24 de 207
+CODIGO: 10095039 APELLIDO:  NUÑEZ DIAZ PABLO GLIMAN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:59 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 25 de 207
+CODIGO: 10345403 APELLIDO:  MANEIRO  DEISY  DEL VALLE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:27 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:09 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 26 de 207
+CODIGO: 10351824 APELLIDO:  GOMEZ FREGONA ERICK RUBENS ADONAYS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:35 am                  Frimaca
+vie. 02 oct. 2020       06:19 pm                  Frimaca
+lun. 05 oct. 2020       07:33 am                  Frimaca
+lun. 05 oct. 2020       07:33 am                  Frimaca
+lun. 05 oct. 2020       05:31 pm                  Frimaca
+mar. 06 oct. 2020       07:31 am                  Frimaca
+mar. 06 oct. 2020       06:59 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 27 de 207
+CODIGO: 10352022 APELLIDO:  CASTILLO LINDARTE WILLIAM OSCAR
+Fecha                   Hora Marcaje              Dispositivo
+lun. 05 oct. 2020       06:57 am                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 28 de 207
+CODIGO: 10499007 APELLIDO:  NAVAS HERRERA ARTEMIO
+Fecha                   Hora Marcaje              Dispositivo
+lun. 05 oct. 2020       07:17 am                  Frimaca
+mar. 06 oct. 2020       06:57 am                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 29 de 207
+CODIGO: 10540903 APELLIDO:  AVENDAÑO MENDEZ YURI VLADIMIT
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:52 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 30 de 207
+CODIGO: 10690503 APELLIDO:  GAVIDIA MONSALVE FRANKLIN FIDEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:01 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:04 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 31 de 207
+CODIGO: 10691842 APELLIDO:  HERRERA IZQUIEL CRISALIDA
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       01:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 32 de 207
+CODIGO: 10697821 APELLIDO:  GUTIERREZ RODRIGUEZ JULIO CESAR
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:14 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:09 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 33 de 207
+CODIGO: 10699550 APELLIDO:  PACHECO GARCIA  FREDDY JOSE
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       06:04 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 34 de 207
+CODIGO: 11314776 APELLIDO:  ODRIOZOLA MACEDO MIKEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 02 oct. 2020       04:09 pm                  Frimaca
+lun. 05 oct. 2020       06:59 am                  Frimaca
+lun. 05 oct. 2020       04:22 pm                  Frimaca
+mar. 06 oct. 2020       06:59 am                  Frimaca
+mar. 06 oct. 2020       12:37 pm                  Frimaca
+mar. 06 oct. 2020       02:09 pm                  Frimaca
+mar. 06 oct. 2020       05:09 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 35 de 207
+CODIGO: 11405627 APELLIDO:  RODRIGUEZ RODRIGUEZ ROSA ANA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:21 am                  Frimaca
+vie. 02 oct. 2020       04:30 pm                  Frimaca
+lun. 05 oct. 2020       07:06 am                  Frimaca
+lun. 05 oct. 2020       05:28 pm                  Frimaca
+mar. 06 oct. 2020       06:59 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 36 de 207
+CODIGO: 11407106 APELLIDO:  ROSALES PANTOJA DENNIS WILMER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 37 de 207
+CODIGO: 11482685 APELLIDO:  ROJAS HERRERA ALEXANDER ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:44 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 38 de 207
+CODIGO: 11484364 APELLIDO:  VARGAS  MARTINEZ  FRANKLIN JESUS
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:09 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 39 de 207
+CODIGO: 11489461 APELLIDO:  OLIVEROS FEBRES MARIA ALEJANDRA
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:25 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 40 de 207
+CODIGO: 11601330 APELLIDO:  DAVILA FERNANDEZ ORLANDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+vie. 02 oct. 2020       12:00 pm                  Frimaca
+vie. 02 oct. 2020       12:57 pm                  Frimaca
+vie. 02 oct. 2020       03:02 pm                  Frimaca
+mar. 06 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       12:13 pm                  Frimaca
+mar. 06 oct. 2020       01:02 pm                  Frimaca
+mar. 06 oct. 2020       03:07 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 41 de 207
+CODIGO: 11680925 APELLIDO:  TORRES VASQUEZ ALEXANDER ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:42 am                  Inproceca I
+vie. 25 sept. 2020      08:00 am                  Inproceca I
+vie. 02 oct. 2020       12:11 pm                  Inproceca I
+vie. 02 oct. 2020       12:52 pm                  Inproceca I
+mar. 06 oct. 2020       12:42 pm                  Inproceca I
+mar. 06 oct. 2020       04:08 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 42 de 207
+CODIGO: 11831239 APELLIDO:  SERRANO RAMIREZ JOSE GREGORIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:55 am                  Almacenes Guacar
+vie. 02 oct. 2020       11:56 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:51 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:57 pm                  Inproceca I
+mar. 06 oct. 2020       01:00 pm                  Inproceca I
+mar. 06 oct. 2020       04:07 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 43 de 207
+CODIGO: 11844883 APELLIDO:  CARRILLO PALMA MARIA AUXILIADORA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:50 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:18 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:56 pm                  Almacenes Guacar
+lun. 05 oct. 2020       12:12 pm                  Comedor
+mar. 06 oct. 2020       12:19 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:51 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:33 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 44 de 207
+CODIGO: 11921532 APELLIDO:  LOPEZ CASTILLO ELSA NOLAISKA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:51 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:20 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:56 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:20 pm                  Almacenes Guacar
+mar. 06 oct. 2020       02:19 pm                  Almacenes Guacar
+mar. 06 oct. 2020       06:18 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 45 de 207
+CODIGO: 11922663 APELLIDO:  CASTRO ROJAS CLAUDIA IRENE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:01 am                  Inproceca I
+vie. 25 sept. 2020      08:01 am                  Inproceca I
+mar. 06 oct. 2020       04:05 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 46 de 207
+CODIGO: 12297531 APELLIDO:  BRICEÑO VARGAS ALEXANDER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:01 am                  Inproceca I
+vie. 02 oct. 2020       12:44 pm                  Inproceca I
+vie. 02 oct. 2020       01:31 pm                  Inproceca I
+mar. 06 oct. 2020       12:34 pm                  Inproceca I
+mar. 06 oct. 2020       01:17 pm                  Inproceca I
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 47 de 207
+CODIGO: 12549197 APELLIDO:  VIELMA ESPINOZA YASMELY MARLENI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:01 am                  Inproceca I
+vie. 25 sept. 2020      07:02 am                  Inproceca I
+vie. 25 sept. 2020      07:03 am                  Inproceca I
+mar. 06 oct. 2020       04:24 pm                  Inproceca I
+mar. 06 oct. 2020       04:25 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 48 de 207
+CODIGO: 12598522 APELLIDO:  SALAZAR CAROLINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:57 am                  Inproceca I
+vie. 02 oct. 2020       02:06 pm                  Inproceca I
+mar. 06 oct. 2020       02:00 pm                  Inproceca I
+mar. 06 oct. 2020       04:03 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 49 de 207
+CODIGO: 12683587 APELLIDO:  CHAVEZ BRIZUELA LUIS GILBERTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:33 am                  Inproceca I
+vie. 02 oct. 2020       12:09 pm                  Inproceca I
+vie. 02 oct. 2020       12:58 pm                  Inproceca I
+mar. 06 oct. 2020       12:21 pm                  Inproceca I
+mar. 06 oct. 2020       01:00 pm                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 50 de 207
+CODIGO: 12829333 APELLIDO:  HERNANDEZ CARTAYA  JOSE LUIS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       11:57 am                  Almacenes Guacar
+mar. 06 oct. 2020       12:21 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:59 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 51 de 207
+CODIGO: 12829489 APELLIDO:  IBARRA JORGE ENRIQUE
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       12:17 pm                  Inproceca I
+mar. 06 oct. 2020       01:03 pm                  Inproceca I
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 52 de 207
+CODIGO: 12830614 APELLIDO:  ZAPATA TILVES  ANA JULIA
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:03 pm                  Inproceca I
+mar. 06 oct. 2020       04:03 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 53 de 207
+CODIGO: 13067156 APELLIDO:  FIGUERA PEREZ DENNYS DOMINGO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:01 am                  Inproceca I
+mar. 06 oct. 2020       04:01 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 54 de 207
+CODIGO: 13109498 APELLIDO:  MARTINEZ RAMOS ARTURO EMILIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:38 am                  Inproceca I
+mar. 06 oct. 2020       04:13 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 55 de 207
+CODIGO: 13110140 APELLIDO:  ROJAS MORALES HELEN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Inproceca I
+vie. 02 oct. 2020       02:06 pm                  Inproceca I
+mar. 06 oct. 2020       02:00 pm                  Inproceca I
+mar. 06 oct. 2020       03:08 pm                  Inproceca I
+mar. 06 oct. 2020       04:03 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 56 de 207
+CODIGO: 13110878 APELLIDO:  ZERPA FARIAS AXEL JONATHAN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:24 am                  Almacenes Guacar
+mar. 06 oct. 2020       12:22 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:11 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 57 de 207
+CODIGO: 13110947 APELLIDO:  PERDOMO BRACAMONTE YRLAND JOSE
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       03:58 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 58 de 207
+CODIGO: 13287740 APELLIDO:  ESCALONA RODRIGUEZ ANGELO GABRIEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       11:56 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 59 de 207
+CODIGO: 13359154 APELLIDO:  MARCANO  FELIX ALEXANDER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:39 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:14 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:49 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:32 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:32 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:00 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:59 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 60 de 207
+CODIGO: 13465778 APELLIDO:  TORRES MANZANEDA AMILCAR LEONEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:36 am                  Frimaca
+vie. 02 oct. 2020       12:58 pm                  Frimaca
+vie. 02 oct. 2020       01:31 pm                  Frimaca
+vie. 02 oct. 2020       04:46 pm                  Frimaca
+sáb. 03 oct. 2020       07:56 am                  Frimaca
+lun. 05 oct. 2020       06:59 am                  Frimaca
+lun. 05 oct. 2020       04:08 pm                  Frimaca
+mar. 06 oct. 2020       06:59 am                  Frimaca
+mar. 06 oct. 2020       12:57 pm                  Frimaca
+mar. 06 oct. 2020       01:28 pm                  Frimaca
+mar. 06 oct. 2020       04:16 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 61 de 207
+CODIGO: 13480263 APELLIDO:  MOLINA DE TORRES YARELYS DEL VALLE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:27 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:27 pm                  Inproceca I
+vie. 02 oct. 2020       01:09 pm                  Inproceca I
+mar. 06 oct. 2020       12:21 pm                  Inproceca I
+mar. 06 oct. 2020       01:03 pm                  Inproceca I
+mar. 06 oct. 2020       04:09 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 62 de 207
+CODIGO: 13504228 APELLIDO:  EREIPA VAAMONDE JUAN CARLOS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:55 am                  Almacenes Guacar
+vie. 02 oct. 2020       11:54 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:53 pm                  Almacenes Guacar
+vie. 02 oct. 2020       02:27 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:55 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 63 de 207
+CODIGO: 13568954 APELLIDO:  FINOL PEREZ ALEXANDRA
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:21 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 64 de 207
+CODIGO: 13621684 APELLIDO:  ARIAS GRATEROL JOSE FRANCISCO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 65 de 207
+CODIGO: 13626812 APELLIDO:  MIJARES MARCANO DAYANA MARGARITA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 02 oct. 2020       03:03 pm                  Frimaca
+lun. 05 oct. 2020       06:59 am                  Frimaca
+lun. 05 oct. 2020       03:00 pm                  Frimaca
+mar. 06 oct. 2020       06:59 am                  Frimaca
+mar. 06 oct. 2020       03:13 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 66 de 207
+CODIGO: 13691076 APELLIDO:  CONDE  YEISI MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:18 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 67 de 207
+CODIGO: 13824935 APELLIDO:  CARRERO NIÑO YUSMARY JACQUELINECARRERO NIÑO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:04 am                  Frimaca
+vie. 25 sept. 2020      08:05 am                  Frimaca
+vie. 02 oct. 2020       12:35 pm                  Frimaca
+vie. 02 oct. 2020       01:11 pm                  Frimaca
+vie. 02 oct. 2020       04:02 pm                  Frimaca
+lun. 05 oct. 2020       06:57 am                  Frimaca
+lun. 05 oct. 2020       04:08 pm                  Frimaca
+mar. 06 oct. 2020       07:00 am                  Frimaca
+mar. 06 oct. 2020       12:40 pm                  Frimaca
+mar. 06 oct. 2020       01:57 pm                  Frimaca
+mar. 06 oct. 2020       04:14 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 68 de 207
+CODIGO: 14035900 APELLIDO:  HERNANDEZ ALZUALDE JULIO CÉSAR
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:57 am                  Almacenes Guacar
+vie. 02 oct. 2020       11:55 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:18 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:03 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:05 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:51 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 69 de 207
+CODIGO: 14046795 APELLIDO:  PINEDA GONZALEZ ELLERY
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Frimaca
+vie. 02 oct. 2020       12:41 pm                  Frimaca
+vie. 02 oct. 2020       12:47 pm                  Frimaca
+vie. 02 oct. 2020       04:02 pm                  Frimaca
+mar. 06 oct. 2020       07:03 am                  Frimaca
+mar. 06 oct. 2020       12:38 pm                  Frimaca
+mar. 06 oct. 2020       12:46 pm                  Frimaca
+mar. 06 oct. 2020       04:16 pm                  Frimaca
+mar. 06 oct. 2020       04:18 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 70 de 207
+CODIGO: 14202768 APELLIDO:  PARGAS CUETO YASMIR ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:03 am                  Frimaca
+vie. 02 oct. 2020       08:48 am                  Frimaca
+vie. 02 oct. 2020       04:03 pm                  Frimaca
+lun. 05 oct. 2020       08:03 am                  Frimaca
+lun. 05 oct. 2020       04:06 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       04:14 pm                  Frimaca
+mar. 06 oct. 2020       04:14 pm                  Frimaca
+mar. 06 oct. 2020       04:15 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 71 de 207
+CODIGO: 14331333 APELLIDO:  GARCIA BOLIVAR JAROLD JOSÉ
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Almacenes Guacar
+vie. 25 sept. 2020      07:31 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 72 de 207
+CODIGO: 14412302 APELLIDO:  DIAZ PACHECO CARLOS ENRIQUE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:03 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 73 de 207
+CODIGO: 14484580 APELLIDO:  GUTIERREZ JOSE JOHEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      05:58 am                  Frimaca
+vie. 02 oct. 2020       12:00 pm                  Frimaca
+vie. 02 oct. 2020       12:25 pm                  Frimaca
+lun. 05 oct. 2020       05:56 am                  Frimaca
+lun. 05 oct. 2020       11:55 am                  Frimaca
+lun. 05 oct. 2020       12:33 pm                  Frimaca
+lun. 05 oct. 2020       04:57 pm                  Frimaca
+mar. 06 oct. 2020       05:44 am                  Frimaca
+mar. 06 oct. 2020       12:58 pm                  Frimaca
+mar. 06 oct. 2020       01:26 pm                  Frimaca
+mar. 06 oct. 2020       05:08 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 74 de 207
+CODIGO: 14494384 APELLIDO:  GONZALEZ MOLINA GILBERTO JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+vie. 25 sept. 2020      06:55 am                  Inproceca I
+vie. 02 oct. 2020       11:54 am                  Inproceca I
+vie. 02 oct. 2020       11:56 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:48 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:51 pm                  Inproceca I
+mar. 06 oct. 2020       11:52 am                  Inproceca I
+mar. 06 oct. 2020       11:54 am                  Almacenes Guacar
+mar. 06 oct. 2020       12:53 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:54 pm                  Inproceca I
+mar. 06 oct. 2020       03:55 pm                  Inproceca I
+mar. 06 oct. 2020       03:57 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 75 de 207
+CODIGO: 14495560 APELLIDO:  BRACAMONTE PEREZ YAZMIN ADRIANA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+vie. 02 oct. 2020       02:06 pm                  Inproceca I
+vie. 02 oct. 2020       02:21 pm                  Inproceca I
+mar. 06 oct. 2020       02:00 pm                  Inproceca I
+mar. 06 oct. 2020       03:08 pm                  Inproceca I
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 76 de 207
+CODIGO: 14547899 APELLIDO:  ANAHILLEN ZURITA RUIZ
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:05 am                  Frimaca
+vie. 02 oct. 2020       03:02 pm                  Frimaca
+lun. 05 oct. 2020       08:03 am                  Frimaca
+lun. 05 oct. 2020       04:07 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       04:11 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 77 de 207
+CODIGO: 14644969 APELLIDO:  ESTRADA JEAN CARLOS
+Fecha                   Hora Marcaje              Dispositivo
+lun. 05 oct. 2020       06:58 am                  Frimaca
+lun. 05 oct. 2020       04:07 pm                  Frimaca
+mar. 06 oct. 2020       06:58 am                  Frimaca
+mar. 06 oct. 2020       04:20 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 78 de 207
+CODIGO: 14743000 APELLIDO:  MONTES BLANCO MARY LUZ
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 02 oct. 2020       03:03 pm                  Frimaca
+lun. 05 oct. 2020       07:00 am                  Frimaca
+lun. 05 oct. 2020       07:00 am                  Frimaca
+lun. 05 oct. 2020       03:00 pm                  Frimaca
+lun. 05 oct. 2020       03:00 pm                  Frimaca
+mar. 06 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       06:58 am                  Frimaca
+mar. 06 oct. 2020       03:13 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 79 de 207
+CODIGO: 14908857 APELLIDO:  GARCIA BURGUILLOS DAYELI CAROLINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:26 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:03 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 80 de 207
+CODIGO: 14934211 APELLIDO:  PINO GUERRERO ANDRES EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:34 am                  Inproceca I
+mar. 06 oct. 2020       04:29 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 81 de 207
+CODIGO: 14972683 APELLIDO:  VALLENILLA MONASTERIOS FRANKLIN EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Inproceca I
+vie. 25 sept. 2020      07:00 am                  Inproceca I
+vie. 25 sept. 2020      07:00 am                  Inproceca I
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 82 de 207
+CODIGO: 14973147 APELLIDO:  GARCIA GONZALEZ  CARLOS EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 83 de 207
+CODIGO: 15025274 APELLIDO:  LIENDO FARRAEZ DARWIN JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 02 oct. 2020       03:16 pm                  Frimaca
+vie. 02 oct. 2020       04:01 pm                  Frimaca
+lun. 05 oct. 2020       06:58 am                  Frimaca
+lun. 05 oct. 2020       03:01 pm                  Frimaca
+mar. 06 oct. 2020       07:04 am                  Frimaca
+mar. 06 oct. 2020       04:04 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 84 de 207
+CODIGO: 15131933 APELLIDO:  ALTUVE DE GUERRA MAYURI VIRGINIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:57 am                  Frimaca
+vie. 25 sept. 2020      06:57 am                  Frimaca
+vie. 02 oct. 2020       03:04 pm                  Frimaca
+lun. 05 oct. 2020       06:58 am                  Frimaca
+lun. 05 oct. 2020       03:00 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 85 de 207
+CODIGO: 15373063 APELLIDO:  ALVAREZ GOITIA ALVARO GABRIEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:39 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:52 pm                  Almacenes Guacar
+mar. 06 oct. 2020       11:57 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 86 de 207
+CODIGO: 15577236 APELLIDO:  TORRES GONZALEZ CRISTEL ALICIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 87 de 207
+CODIGO: 15577318 APELLIDO:  UTRERA MUÑOZ JOYCE ALEXANDER
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       03:51 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 88 de 207
+CODIGO: 15613889 APELLIDO:  BLANCO CASTRO  FRANCISCO JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:14 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:27 pm                  Inproceca I
+vie. 02 oct. 2020       01:09 pm                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 89 de 207
+CODIGO: 15615713 APELLIDO:  BARBOZA CARDOZA EVELIN AYARI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:14 am                  Inproceca I
+vie. 25 sept. 2020      06:14 am                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 90 de 207
+CODIGO: 15616123 APELLIDO:  SILVA RAMOS MARCO ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:54 am                  Frimaca
+vie. 02 oct. 2020       03:53 pm                  Frimaca
+lun. 05 oct. 2020       08:11 am                  Frimaca
+lun. 05 oct. 2020       01:40 pm                  Frimaca
+lun. 05 oct. 2020       04:04 pm                  Frimaca
+mar. 06 oct. 2020       08:32 am                  Frimaca
+mar. 06 oct. 2020       04:05 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 91 de 207
+CODIGO: 15699133 APELLIDO:  APONTE CONTRERAS GUSTAVO ADOLFO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:44 am                  Inproceca I
+mar. 06 oct. 2020       04:08 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 92 de 207
+CODIGO: 15871118 APELLIDO:  PRADA ANDRES JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Inproceca I
+vie. 25 sept. 2020      06:59 am                  Inproceca I
+mar. 06 oct. 2020       04:17 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 93 de 207
+CODIGO: 15930995 APELLIDO:  MENDOZA DUARTE JOSE RAMON
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+mar. 06 oct. 2020       01:05 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:18 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 94 de 207
+CODIGO: 16034222 APELLIDO:  AGUILAR MAITA DANIELA JOSEFINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       12:05 pm                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 95 de 207
+CODIGO: 16056977 APELLIDO:  MONGES MONGES JOSE ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:48 am                  Inproceca I
+vie. 02 oct. 2020       02:40 pm                  Inproceca I
+mar. 06 oct. 2020       03:59 pm                  Inproceca I
+mar. 06 oct. 2020       03:59 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 96 de 207
+CODIGO: 16094328 APELLIDO:  LARA SALAS EDDY JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:05 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:51 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 97 de 207
+CODIGO: 16095267 APELLIDO:  PIMENTEL HERLIN ALI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Inproceca I
+mar. 06 oct. 2020       04:12 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 98 de 207
+CODIGO: 16095766 APELLIDO:  MORENO PADRON DANIEL EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:35 am                  Inproceca I
+mar. 06 oct. 2020       04:19 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                          Página 99 de 207
+CODIGO: 16096759 APELLIDO:  DIAZ RAMIREZ RICARDO ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:54 am                  Inproceca I
+vie. 02 oct. 2020       11:45 am                  Inproceca I
+vie. 02 oct. 2020       12:59 pm                  Inproceca I
+mar. 06 oct. 2020       11:50 am                  Inproceca I
+mar. 06 oct. 2020       01:04 pm                  Inproceca I
+mar. 06 oct. 2020       03:55 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 100 de
+CODIGO: 16097275 APELLIDO:  VALLADARES YANEZ JHOAN JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:01 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 101 de
+CODIGO: 16109167 APELLIDO:  MADRID CEBALLO YEIRO ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:03 am                  Frimaca
+vie. 02 oct. 2020       08:49 am                  Frimaca
+vie. 02 oct. 2020       04:00 pm                  Frimaca
+mar. 06 oct. 2020       08:04 am                  Frimaca
+mar. 06 oct. 2020       04:19 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 102 de
+CODIGO: 16134079 APELLIDO:  SAVA SAINBURY ASTRID VANESSA DEL VALLE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Almacenes Guacar
+vie. 25 sept. 2020      07:49 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:08 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:48 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:48 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:04 pm                  Inproceca I
+mar. 06 oct. 2020       12:52 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:15 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 103 de
+CODIGO: 16178922 APELLIDO:  LOPEZ MENDOZA AGUSTIN JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:57 am                  Frimaca
+vie. 02 oct. 2020       04:39 pm                  Frimaca
+lun. 05 oct. 2020       07:46 am                  Frimaca
+lun. 05 oct. 2020       05:43 pm                  Frimaca
+mar. 06 oct. 2020       07:40 am                  Frimaca
+mar. 06 oct. 2020       05:18 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 104 de
+CODIGO: 16329216 APELLIDO:  LICONTE GUDIÑO, ELVIS JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:05 am                  Frimaca
+vie. 02 oct. 2020       04:03 pm                  Frimaca
+lun. 05 oct. 2020       08:04 am                  Frimaca
+lun. 05 oct. 2020       04:07 pm                  Frimaca
+mar. 06 oct. 2020       08:08 am                  Frimaca
+mar. 06 oct. 2020       04:13 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 105 de
+CODIGO: 16331483 APELLIDO:  CHIM LAM  WAILLY
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Inproceca I
+vie. 02 oct. 2020       12:59 pm                  Inproceca I
+mar. 06 oct. 2020       12:55 pm                  Inproceca I
+mar. 06 oct. 2020       02:07 pm                  Inproceca I
+mar. 06 oct. 2020       03:58 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 106 de
+CODIGO: 16495527 APELLIDO:  MORGANTI GUTIERREZ CATHERINE DAIYELITH
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:23 am                  Inproceca I
+mar. 06 oct. 2020       04:05 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 107 de
+CODIGO: 16496871 APELLIDO:  CALDERON IMAR
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:35 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 108 de
+CODIGO: 16600989 APELLIDO:  ALGARIN MORA EDGAR ENRIQUE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:06 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 109 de
+CODIGO: 16671904 APELLIDO:  TERAN MARIN JHOAN ALI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:06 am                  Frimaca
+vie. 02 oct. 2020       04:02 pm                  Frimaca
+lun. 05 oct. 2020       07:00 am                  Frimaca
+lun. 05 oct. 2020       03:02 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       04:10 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 110 de
+CODIGO: 16673312 APELLIDO:  URBANEJA GONZALEZ JACKSON MANUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:50 am                  Inproceca I
+vie. 02 oct. 2020       11:58 am                  Inproceca I
+vie. 02 oct. 2020       12:54 pm                  Inproceca I
+mar. 06 oct. 2020       01:59 pm                  Inproceca I
+mar. 06 oct. 2020       01:59 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 111 de
+CODIGO: 16706104 APELLIDO:  SOMOZA MUJICA JESUS ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Inproceca I
+mar. 06 oct. 2020       04:14 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 112 de
+CODIGO: 16819107 APELLIDO:  CARTAYA DIAZ ARIADNA YORELEIS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       12:19 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:55 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:20 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:21 pm                  Inproceca I
+mar. 06 oct. 2020       06:17 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 113 de
+CODIGO: 16820465 APELLIDO:  NAAR CAMACHO JONATHAN JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:51 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 114 de
+CODIGO: 16870178 APELLIDO:  LEON TROCONIS JACKSON DAVID
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:57 am                  Frimaca
+vie. 02 oct. 2020       03:02 pm                  Frimaca
+lun. 05 oct. 2020       07:01 am                  Frimaca
+lun. 05 oct. 2020       03:03 pm                  Frimaca
+mar. 06 oct. 2020       07:01 am                  Frimaca
+mar. 06 oct. 2020       03:05 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 115 de
+CODIGO: 16901814 APELLIDO:  MENDOZA MARRERO LUIS AUGUSTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:27 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:00 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 116 de
+CODIGO: 16911391 APELLIDO:  CARDOZO PARRA YEIDER YOFRANK
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:23 am                  Inproceca I
+mar. 06 oct. 2020       04:08 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 117 de
+CODIGO: 16911768 APELLIDO:  LONGA   RAYTOMAS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:55 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:52 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 118 de
+CODIGO: 17019112 APELLIDO:  ROJAS ROSBELY CAROLINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:35 am                  Frimaca
+vie. 02 oct. 2020       12:34 pm                  Frimaca
+vie. 02 oct. 2020       01:11 pm                  Frimaca
+vie. 02 oct. 2020       06:18 pm                  Frimaca
+vie. 02 oct. 2020       06:18 pm                  Frimaca
+lun. 05 oct. 2020       07:33 am                  Frimaca
+lun. 05 oct. 2020       04:45 pm                  Frimaca
+mar. 06 oct. 2020       07:31 am                  Frimaca
+mar. 06 oct. 2020       12:40 pm                  Frimaca
+mar. 06 oct. 2020       01:56 pm                  Frimaca
+mar. 06 oct. 2020       01:56 pm                  Frimaca
+mar. 06 oct. 2020       06:05 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 119 de
+CODIGO: 17074218 APELLIDO:  BLANCO CASTILLO VANESSA ALEXANDRA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:06 am                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 120 de
+CODIGO: 17076632 APELLIDO:  ESCOBAR HEBER ALEXIS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Inproceca I
+vie. 02 oct. 2020       12:50 pm                  Inproceca I
+vie. 02 oct. 2020       01:52 pm                  Inproceca I
+mar. 06 oct. 2020       01:44 pm                  Inproceca I
+mar. 06 oct. 2020       04:06 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 121 de
+CODIGO: 17118602 APELLIDO:  ROMERO ISTURIZ LUIS JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 122 de
+CODIGO: 17119916 APELLIDO:  SILVA MEZA SALLY MARY
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:33 am                  Inproceca I
+mar. 06 oct. 2020       04:29 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 123 de
+CODIGO: 17386573 APELLIDO:  CAICEDO BERDUGO DARIO JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       01:16 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:16 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:01 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 124 de
+CODIGO: 17426365 APELLIDO:  FRANKLIN JUNIOR REYES GUZMAN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Frimaca
+vie. 02 oct. 2020       01:10 pm                  Frimaca
+vie. 02 oct. 2020       03:00 pm                  Frimaca
+lun. 05 oct. 2020       07:01 am                  Frimaca
+lun. 05 oct. 2020       03:02 pm                  Frimaca
+mar. 06 oct. 2020       07:03 am                  Frimaca
+mar. 06 oct. 2020       12:46 pm                  Frimaca
+mar. 06 oct. 2020       03:01 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 125 de
+CODIGO: 17458182 APELLIDO:  ROMERO  HECTOR JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:39 am                  Inproceca I
+vie. 02 oct. 2020       12:58 pm                  Inproceca I
+vie. 02 oct. 2020       12:58 pm                  Inproceca I
+mar. 06 oct. 2020       12:57 pm                  Inproceca I
+mar. 06 oct. 2020       12:57 pm                  Inproceca I
+mar. 06 oct. 2020       12:57 pm                  Inproceca I
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 126 de
+CODIGO: 17458268 APELLIDO:  ESPINOZA RUIZ JOSE MARTIN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Inproceca I
+vie. 02 oct. 2020       01:00 pm                  Inproceca I
+vie. 02 oct. 2020       01:00 pm                  Inproceca I
+mar. 06 oct. 2020       01:00 pm                  Inproceca I
+mar. 06 oct. 2020       01:00 pm                  Inproceca I
+mar. 06 oct. 2020       03:53 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 127 de
+CODIGO: 17459836 APELLIDO:  VASQUEZ PARRA YOHN MELDRICK MISAEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:48 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:00 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 128 de
+CODIGO: 17513471 APELLIDO:  SILVA BARRIOS JOHAN ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:12 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 129 de
+CODIGO: 17518851 APELLIDO:  CONTRERAS LEAL JHENDRY JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:44 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 130 de
+CODIGO: 17651241 APELLIDO:  MORENO JHONNY JOSE
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       12:22 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:03 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 131 de
+CODIGO: 17651762 APELLIDO:  OLIVARES HERNANDEZ FRANCISCO JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Almacenes Guacar
+vie. 25 sept. 2020      07:01 am                  Inproceca I
+mar. 06 oct. 2020       12:18 pm                  Inproceca I
+mar. 06 oct. 2020       01:03 pm                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 132 de
+CODIGO: 17720212 APELLIDO:  RODRIGUEZ JOSÉ ALFREDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:57 am                  Frimaca
+vie. 02 oct. 2020       04:03 pm                  Frimaca
+lun. 05 oct. 2020       06:58 am                  Frimaca
+lun. 05 oct. 2020       04:04 pm                  Frimaca
+mar. 06 oct. 2020       08:06 am                  Frimaca
+mar. 06 oct. 2020       04:18 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 133 de
+CODIGO: 17754184 APELLIDO:  EUGENIO BRITO TORRES
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:05 am                  Frimaca
+vie. 02 oct. 2020       04:00 pm                  Frimaca
+lun. 05 oct. 2020       08:03 am                  Frimaca
+lun. 05 oct. 2020       04:05 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       04:08 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 134 de
+CODIGO: 17919665 APELLIDO:  HERRERA ROJAS  JONATHAN JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:53 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 135 de
+CODIGO: 17919836 APELLIDO:  MARRON RAMIREZ YESSIKA VANESSA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Inproceca I
+vie. 02 oct. 2020       02:06 pm                  Inproceca I
+mar. 06 oct. 2020       02:00 pm                  Inproceca I
+mar. 06 oct. 2020       03:08 pm                  Inproceca I
+mar. 06 oct. 2020       04:03 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 136 de
+CODIGO: 17921673 APELLIDO:  MORENO REYES KELI NOELKI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+mar. 06 oct. 2020       03:08 pm                  Inproceca I
+mar. 06 oct. 2020       04:05 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 137 de
+CODIGO: 17966679 APELLIDO:  ARIZA OLIVARES ORWIN DE JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+vie. 02 oct. 2020       03:00 pm                  Frimaca
+lun. 05 oct. 2020       07:00 am                  Frimaca
+lun. 05 oct. 2020       03:01 pm                  Frimaca
+mar. 06 oct. 2020       07:01 am                  Frimaca
+mar. 06 oct. 2020       03:04 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 138 de
+CODIGO: 18093240 APELLIDO:  MUÑOZ HERNANDEZ PEDRO MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:04 am                  Inproceca I
+vie. 25 sept. 2020      08:11 am                  Inproceca I
+mar. 06 oct. 2020       03:57 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 139 de
+CODIGO: 18093356 APELLIDO:  LAREZ COBO TOMAS ADRIAN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:39 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:17 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 140 de
+CODIGO: 18402038 APELLIDO:  GONZALEZ TORO YERIVET
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:14 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 141 de
+CODIGO: 18403441 APELLIDO:  VALERO PANTE JULIO ALBERTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:30 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 142 de
+CODIGO: 18452255 APELLIDO:  GRUBER NATHALY NATASHA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       04:10 pm                  Frimaca
+lun. 05 oct. 2020       07:32 am                  Frimaca
+mar. 06 oct. 2020       07:13 am                  Frimaca
+mar. 06 oct. 2020       12:37 pm                  Frimaca
+mar. 06 oct. 2020       05:09 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 143 de
+CODIGO: 18752048 APELLIDO:  MIJARES CARRASQUEL JOSE GREGORIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:06 pm                  Almacenes Guacar
+vie. 02 oct. 2020       02:04 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:05 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:59 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 144 de
+CODIGO: 18820629 APELLIDO:  CHACON ALCALA  DARIO JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:04 am                  Frimaca
+vie. 25 sept. 2020      08:04 am                  Frimaca
+vie. 02 oct. 2020       04:02 pm                  Frimaca
+vie. 02 oct. 2020       04:02 pm                  Frimaca
+lun. 05 oct. 2020       08:04 am                  Frimaca
+lun. 05 oct. 2020       04:04 pm                  Frimaca
+lun. 05 oct. 2020       04:04 pm                  Frimaca
+mar. 06 oct. 2020       08:06 am                  Frimaca
+mar. 06 oct. 2020       03:01 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 145 de
+CODIGO: 18829680 APELLIDO:  TRIANA MARRERO LUIS ALBERTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:06 am                  Frimaca
+vie. 02 oct. 2020       08:49 am                  Frimaca
+vie. 02 oct. 2020       03:58 pm                  Frimaca
+lun. 05 oct. 2020       08:05 am                  Frimaca
+lun. 05 oct. 2020       04:02 pm                  Frimaca
+mar. 06 oct. 2020       08:06 am                  Frimaca
+mar. 06 oct. 2020       04:07 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 146 de
+CODIGO: 18837412 APELLIDO:  DA MOTA FLORES YEFER FRANCISCO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Inproceca I
+mar. 06 oct. 2020       04:01 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 147 de
+CODIGO: 18954676 APELLIDO:  LEON PAEZ HAIDEE BETZABETH
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:27 am                  Frimaca
+vie. 02 oct. 2020       04:07 pm                  Frimaca
+lun. 05 oct. 2020       08:05 am                  Frimaca
+lun. 05 oct. 2020       04:10 pm                  Frimaca
+mar. 06 oct. 2020       08:07 am                  Frimaca
+mar. 06 oct. 2020       04:18 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 148 de
+CODIGO: 18955067 APELLIDO:  PEREZ CARVAJAL YERETZY NOHEMI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:01 am                  Inproceca I
+mar. 06 oct. 2020       04:05 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 149 de
+CODIGO: 19155348 APELLIDO:  CASTILLO PATRUYO ROBERTO GUSTA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:54 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:02 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:16 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:00 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 150 de
+CODIGO: 19305441 APELLIDO:  GARCIA COLON YASMIN JOSEFINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+vie. 02 oct. 2020       10:50 am                  Frimaca
+mar. 06 oct. 2020       06:58 am                  Frimaca
+mar. 06 oct. 2020       03:13 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 151 de
+CODIGO: 19398316 APELLIDO:  HERNANDEZ CASTELLANO  DANIEL EZEQUIEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:54 am                  Inproceca I
+vie. 02 oct. 2020       11:53 am                  Inproceca I
+vie. 02 oct. 2020       12:52 pm                  Inproceca I
+mar. 06 oct. 2020       12:58 pm                  Inproceca I
+mar. 06 oct. 2020       01:59 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 152 de
+CODIGO: 19407053 APELLIDO:  MONCADA  SIMON AQUILES
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:50 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 153 de
+CODIGO: 19497153 APELLIDO:  SUAREZ MAITA ROIMAN JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:00 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 154 de
+CODIGO: 19498130 APELLIDO:  GAMBOA RIVERO CRUZ ALEXANDER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       10:44 am                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 155 de
+CODIGO: 19498847 APELLIDO:  REQUENA DIAZ WUENCESMAR NAZARETH
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:51 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:18 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:55 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:01 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:19 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 156 de
+CODIGO: 19564040 APELLIDO:  SANCHEZ GOMEZ JOHAN ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:34 am                  Inproceca I
+vie. 02 oct. 2020       01:08 pm                  Inproceca I
+vie. 02 oct. 2020       01:46 pm                  Inproceca I
+mar. 06 oct. 2020       12:57 pm                  Inproceca I
+mar. 06 oct. 2020       04:00 pm                  Inproceca I
+mar. 06 oct. 2020       04:00 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 157 de
+CODIGO: 19633109 APELLIDO:  DELGADO TOVAR ALEXIS ENRIQUE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:46 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:12 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 158 de
+CODIGO: 19634237 APELLIDO:  GALARRAGA CORDOVA BRIGITT YURAMAICA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 159 de
+CODIGO: 19634597 APELLIDO:  GONZALEZ LISBETH
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Inproceca I
+mar. 06 oct. 2020       04:05 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 160 de
+CODIGO: 19683907 APELLIDO:  CARPIO GONZALEZ KREYVERLIN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 161 de
+CODIGO: 20034993 APELLIDO:  TORRES CARRASCO ERICK ENMANUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:10 am                  Inproceca I
+vie. 02 oct. 2020       01:04 pm                  Inproceca I
+mar. 06 oct. 2020       12:45 pm                  Inproceca I
+mar. 06 oct. 2020       02:07 pm                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 162 de
+CODIGO: 20093381 APELLIDO:  RIVAS VALDIVIESO OMAR DAVID
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:04 am                  Inproceca I
+mar. 06 oct. 2020       04:12 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 163 de
+CODIGO: 20209312 APELLIDO:  RAMIREZ LUGO JILARY SAYBI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:00 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:06 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:06 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:12 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 164 de
+CODIGO: 20418707 APELLIDO:  PERAZA XAVIER ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:48 am                  Inproceca I
+vie. 02 oct. 2020       12:03 pm                  Inproceca I
+vie. 02 oct. 2020       12:03 pm                  Inproceca I
+vie. 02 oct. 2020       01:01 pm                  Inproceca I
+mar. 06 oct. 2020       01:05 pm                  Inproceca I
+mar. 06 oct. 2020       03:58 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 165 de
+CODIGO: 20561349 APELLIDO:  RODRIGUEZ ROJAS WILMERY MARIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:19 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:08 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:54 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 166 de
+CODIGO: 20596277 APELLIDO:  ZERPA BUENO ERNESTO DAVID
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:29 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:00 pm                  Almacenes Guacar
+vie. 02 oct. 2020       01:03 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:16 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:02 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:05 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 167 de
+CODIGO: 20820535 APELLIDO:  GUANIPA ROJAS JOISER ALEXANDER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:02 pm                  Almacenes Guacar
+mar. 06 oct. 2020       11:55 am                  Almacenes Guacar
+mar. 06 oct. 2020       12:13 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:56 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 168 de
+CODIGO: 20820809 APELLIDO:  GOMEZ MUÑOZ ROMERLYN AIRAM
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:29 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 169 de
+CODIGO: 20821142 APELLIDO:  CAMARATA MARTINS ANGELICA JOSELYN
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:18 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 170 de
+CODIGO: 20997975 APELLIDO:  PAEZ URBINA JOSE ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Inproceca I
+mar. 06 oct. 2020       04:09 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 171 de
+CODIGO: 21104425 APELLIDO:  MARQUEZ PACHECO HUMBERTO ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:30 am                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 172 de
+CODIGO: 21130724 APELLIDO:  GUTIERREZ MARTINEZ JOSE ALBERTO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:06 am                  Frimaca
+vie. 02 oct. 2020       03:58 pm                  Frimaca
+lun. 05 oct. 2020       07:43 am                  Frimaca
+lun. 05 oct. 2020       04:05 pm                  Frimaca
+mar. 06 oct. 2020       07:06 am                  Frimaca
+mar. 06 oct. 2020       03:05 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 173 de
+CODIGO: 21131323 APELLIDO:  LOZANO CLAVIJO NARGELIN DEL CARMEN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:34 am                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 174 de
+CODIGO: 21131371 APELLIDO:  CASTELLANO BENITEZ IVAN JOEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:07 am                  Frimaca
+vie. 02 oct. 2020       03:59 pm                  Frimaca
+lun. 05 oct. 2020       08:05 am                  Frimaca
+lun. 05 oct. 2020       04:02 pm                  Frimaca
+mar. 06 oct. 2020       08:07 am                  Frimaca
+mar. 06 oct. 2020       04:09 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 175 de
+CODIGO: 21366039 APELLIDO:  VILLARREAL PAREDES OCTAVIO ANTONIO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:40 am                  Frimaca
+vie. 02 oct. 2020       09:38 am                  Frimaca
+vie. 02 oct. 2020       12:00 pm                  Frimaca
+vie. 02 oct. 2020       12:57 pm                  Frimaca
+vie. 02 oct. 2020       04:01 pm                  Frimaca
+lun. 05 oct. 2020       07:47 am                  Frimaca
+lun. 05 oct. 2020       12:00 pm                  Frimaca
+lun. 05 oct. 2020       04:04 pm                  Frimaca
+mar. 06 oct. 2020       07:50 am                  Frimaca
+mar. 06 oct. 2020       01:03 pm                  Frimaca
+mar. 06 oct. 2020       04:06 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 176 de
+CODIGO: 21573610 APELLIDO:  CISNEROS PALACIOS MARIA VICTORIA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:25 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:06 pm                  Almacenes Guacar
+vie. 02 oct. 2020       02:19 pm                  Almacenes Guacar
+mar. 06 oct. 2020       10:58 am                  Almacenes Guacar
+mar. 06 oct. 2020       10:59 am                  Almacenes Guacar
+mar. 06 oct. 2020       01:06 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:08 pm                  Inproceca I
+mar. 06 oct. 2020       04:12 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 177 de
+CODIGO: 22044143 APELLIDO:  ROMERO HERNANDEZ MARIANGELY YUGERSI
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:34 am                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 178 de
+CODIGO: 22044237 APELLIDO:  CASTILLO LOPEZ GREGORI JESUS
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:00 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 179 de
+CODIGO: 22045499 APELLIDO:  ROMERO VARGAS KELVIN JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       11:49 am                  Inproceca I
+mar. 06 oct. 2020       11:48 am                  Inproceca I
+mar. 06 oct. 2020       01:03 pm                  Inproceca I
+mar. 06 oct. 2020       03:57 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 180 de
+CODIGO: 22558470 APELLIDO:  MOSQUERA ROMERO PAUL ENRIQUE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       12:10 pm                  Inproceca I
+vie. 02 oct. 2020       12:34 pm                  Inproceca I
+mar. 06 oct. 2020       12:43 pm                  Inproceca I
+mar. 06 oct. 2020       01:03 pm                  Inproceca I
+mar. 06 oct. 2020       04:08 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 181 de
+CODIGO: 22561082 APELLIDO:  JIMENEZ LOPEZ JHONNY
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:33 am                  Inproceca I
+vie. 02 oct. 2020       01:04 pm                  Inproceca I
+vie. 02 oct. 2020       02:05 pm                  Inproceca I
+mar. 06 oct. 2020       01:01 pm                  Inproceca I
+mar. 06 oct. 2020       02:07 pm                  Inproceca I
+mar. 06 oct. 2020       03:57 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 182 de
+CODIGO: 22772060 APELLIDO:  RODRIGUEZ LEON HEDNAN ELIUD
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:28 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:06 pm                  Almacenes Guacar
+vie. 02 oct. 2020       02:02 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:07 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:10 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 183 de
+CODIGO: 22964668 APELLIDO:  HURTADO RIVAS JOHANGEL ALEJANDRO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:07 am                  Frimaca
+vie. 02 oct. 2020       08:49 am                  Frimaca
+vie. 02 oct. 2020       04:00 pm                  Frimaca
+mar. 06 oct. 2020       08:07 am                  Frimaca
+mar. 06 oct. 2020       04:16 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 184 de
+CODIGO: 23624314 APELLIDO:  MATEY MEDINA SIMON GABRIEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:44 am                  Inproceca I
+mar. 06 oct. 2020       10:05 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 185 de
+CODIGO: 23624434 APELLIDO:  MOREY  JESSICA
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 186 de
+CODIGO: 23745217 APELLIDO:  PATERNINA RAMIREZ ADRIAN EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:25 am                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 187 de
+CODIGO: 24272446 APELLIDO:  ZAMBRANO RUIZ DAMIAN GERARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:58 am                  Inproceca I
+mar. 06 oct. 2020       04:08 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 188 de
+CODIGO: 24332771 APELLIDO:  ROSAL TORRES MARIA GABRIELA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:03 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:02 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 189 de
+CODIGO: 24336745 APELLIDO:  DONAIRE QUINTERO YURBAIN JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Almacenes Guacar
+mar. 06 oct. 2020       04:04 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 190 de
+CODIGO: 24635089 APELLIDO:  CARREÑO VILERA GLENNYS DAYANA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:06 am                  Frimaca
+vie. 02 oct. 2020       12:35 pm                  Frimaca
+vie. 02 oct. 2020       01:11 pm                  Frimaca
+vie. 02 oct. 2020       04:05 pm                  Frimaca
+lun. 05 oct. 2020       08:04 am                  Frimaca
+lun. 05 oct. 2020       04:08 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       12:40 pm                  Frimaca
+mar. 06 oct. 2020       01:57 pm                  Frimaca
+mar. 06 oct. 2020       04:17 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 191 de
+CODIGO: 25284923 APELLIDO:  JIMENEZ RAMIREZ JAIRO JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:56 am                  Frimaca
+vie. 02 oct. 2020       03:03 pm                  Frimaca
+lun. 05 oct. 2020       06:59 am                  Frimaca
+lun. 05 oct. 2020       03:07 pm                  Frimaca
+mar. 06 oct. 2020       07:00 am                  Frimaca
+mar. 06 oct. 2020       12:24 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 192 de
+CODIGO: 25327674 APELLIDO:  ROJAS MIJARES CARLOS MIGUEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:02 am                  Almacenes Guacar
+vie. 02 oct. 2020       01:03 pm                  Almacenes Guacar
+vie. 02 oct. 2020       01:48 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:53 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:53 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 193 de
+CODIGO: 25327682 APELLIDO:  MARTINEZ DIAZ GABRIELA DE JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:08 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:48 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:48 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:30 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 194 de
+CODIGO: 25466603 APELLIDO:  VILLA FERNANDEZ LUIS EDUARDO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      08:04 am                  Frimaca
+vie. 02 oct. 2020       12:50 pm                  Frimaca
+vie. 02 oct. 2020       12:50 pm                  Frimaca
+vie. 02 oct. 2020       04:00 pm                  Frimaca
+lun. 05 oct. 2020       08:03 am                  Frimaca
+lun. 05 oct. 2020       04:01 pm                  Frimaca
+mar. 06 oct. 2020       08:05 am                  Frimaca
+mar. 06 oct. 2020       04:05 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 195 de
+CODIGO: 25715356 APELLIDO:  CAMACHO DIAZ  ARMANDO JAVIER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:54 am                  Inproceca I
+mar. 06 oct. 2020       03:56 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 196 de
+CODIGO: 25787514 APELLIDO:  LUNA COLLAZO MANUEL ALEJANDRO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:32 am                  Inproceca I
+mar. 06 oct. 2020       04:11 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 197 de
+CODIGO: 25870407 APELLIDO:  ROJAS TORRES JOEL DE JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:55 am                  Frimaca
+vie. 02 oct. 2020       04:03 pm                  Frimaca
+lun. 05 oct. 2020       06:57 am                  Frimaca
+lun. 05 oct. 2020       04:09 pm                  Frimaca
+mar. 06 oct. 2020       06:57 am                  Frimaca
+mar. 06 oct. 2020       04:14 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 198 de
+CODIGO: 26194063 APELLIDO:  JIMENEZ CURIEL ALEJANDRA ANDREINA
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Inproceca I
+mar. 06 oct. 2020       04:25 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 199 de
+CODIGO: 26217979 APELLIDO:  BRAVO MEDINA PITTER JOSE
+Fecha                   Hora Marcaje              Dispositivo
+vie. 02 oct. 2020       03:03 pm                  Frimaca
+mar. 06 oct. 2020       08:06 am                  Frimaca
+mar. 06 oct. 2020       04:19 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 200 de
+CODIGO: 26252341 APELLIDO:  ARGUINZONES AROCHA  ESTHEFANI ESTHER
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:59 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 201 de
+CODIGO: 26252504 APELLIDO:  MAYORCA DA ROCHA KARLOS JOHAN
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:00 am                  Frimaca
+vie. 02 oct. 2020       03:00 pm                  Frimaca
+lun. 05 oct. 2020       07:01 am                  Frimaca
+lun. 05 oct. 2020       03:02 pm                  Frimaca
+mar. 06 oct. 2020       07:00 am                  Frimaca
+mar. 06 oct. 2020       03:01 pm                  Frimaca
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 202 de
+CODIGO: 26527125 APELLIDO:  MATA SEIJAS BARBARA NAZAREHT
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:31 am                  Almacenes Guacar
+vie. 02 oct. 2020       12:08 pm                  Almacenes Guacar
+vie. 02 oct. 2020       12:53 pm                  Almacenes Guacar
+mar. 06 oct. 2020       12:51 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:29 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 203 de
+CODIGO: 26946277 APELLIDO:  CABRERA PALACIOS GLEIVER JESUS
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:03 am                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 204 de
+CODIGO: 27037981 APELLIDO:  SUMOZA LEIVA ADRIAN ALEJANDRO
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:45 am                  Inproceca I
+vie. 02 oct. 2020       12:09 pm                  Inproceca I
+vie. 02 oct. 2020       01:05 pm                  Inproceca I
+mar. 06 oct. 2020       12:40 pm                  Almacenes Guacar
+mar. 06 oct. 2020       01:40 pm                  Almacenes Guacar
+mar. 06 oct. 2020       03:54 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 205 de
+CODIGO: 27235330 APELLIDO:  ROSAS IZQUIEL OSWALDO LUIS BRANDO
+Fecha                   Hora Marcaje              Dispositivo
+mar. 06 oct. 2020       04:03 pm                  Almacenes Guacar
+mar. 06 oct. 2020       04:04 pm                  Almacenes Guacar
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 206 de
+CODIGO: 27686158 APELLIDO:  HENRIQUEZ HERRERA YEICO RAFAEL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      07:49 am                  Inproceca I
+vie. 02 oct. 2020       12:50 pm                  Inproceca I
+vie. 02 oct. 2020       01:55 pm                  Inproceca I
+mar. 06 oct. 2020       12:56 pm                  Inproceca I
+mar. 06 oct. 2020       01:57 pm                  Inproceca I
+             REPORTE MARCAJES POR TRABAJADOR                                            Página 207 de
+CODIGO: 28180973 APELLIDO:  RIVAS VILLEGAS RICARDO ASDRUBAL
+Fecha                   Hora Marcaje              Dispositivo
+vie. 25 sept. 2020      06:58 am                  Frimaca
+vie. 02 oct. 2020       08:49 am                  Frimaca
+vie. 02 oct. 2020       04:00 pm                  Frimaca
+lun. 05 oct. 2020       08:04 am                  Frimaca
+lun. 05 oct. 2020       04:07 pm                  Frimaca
+mar. 06 oct. 2020       08:06 am                  Frimaca
+mar. 06 oct. 2020       04:18 pm                  Frimaca
+
