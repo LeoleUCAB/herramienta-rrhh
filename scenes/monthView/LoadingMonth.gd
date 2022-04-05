@@ -2,12 +2,12 @@ extends Control
 
 onready var monthRect = $MonthRect
 
-var year: int = 1900 setget setYear
+var weeks: int = 4 setget setWeeks
 
 func _ready():
-	for i in 5:
-		monthRect.rect_size += Vector2(0, 933)
+	for i in weeks:
+		monthRect.rect_size += Vector2(0, 933.33)
 	pass # Replace with function body.
-
-func setYear(value):
-	year = value
+	
+func setWeeks(value):
+	weeks = value

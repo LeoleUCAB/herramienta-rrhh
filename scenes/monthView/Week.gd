@@ -1,22 +1,27 @@
-extends GridContainer
+extends Control
 
 
-onready var Day1 = $Rect1
-onready var Day2 = $Rect2
-onready var Day3 = $Rect3
-onready var Day4 = $Rect4
-onready var Day5 = $Rect5
-onready var Day6 = $Rect6
-onready var Day7 = $Rect7
+onready var Day1 = $GridContainer/Rect1
+onready var Day2 = $GridContainer/Rect2
+onready var Day3 = $GridContainer/Rect3
+onready var Day4 = $GridContainer/Rect4
+onready var Day5 = $GridContainer/Rect5
+onready var Day6 = $GridContainer/Rect6
+onready var Day7 = $GridContainer/Rect7
 
 var dayList = Array()
-var startDate setget setStartDate
+var startDate = 0 setget setStartDate
+var daysInMonth = 30 setget setDaysInMonth
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	dayList = [Day1, Day2, Day3, Day4, Day5, Day6, Day7]
-	pass # Replace with function body.
+	for i in dayList.size():
+		var date = (startDate + 7 + i)
+		if date > daysInMonth:
+			date -= daysInMonth
+		dayList[i].get_node("DayLabel").text = date as String
+	pass
 
 
 func set_invisible(upTo):
@@ -26,5 +31,6 @@ func set_invisible(upTo):
 
 func setStartDate(value):
 	startDate = value
-	for i in range(7):
-		dayList[i].DayLabel.text = (startDate + i) as String
+
+func setDaysInMonth(value):
+	daysInMonth = value

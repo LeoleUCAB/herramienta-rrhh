@@ -7,30 +7,50 @@ export var loadingPlaceholderScene: PackedScene
 var newMonthList: Array
 var placeholderList: Array
 
-const RANGE = 5
-const MAX_SIZE = 1
-const ITEM_HEIGHT = 5600 #here's the problem
+const RANGE = 3
+const MAX_SIZE = 5
+const MONTHS_IN_YEAR = 12
+const WEEKS_IN_YEAR = 52
+const ITEM_HEIGHT = 933
 const ITEM_WIDTH = 8876
 
 func _ready():
 	for i in range(MAX_SIZE):
-		for j in 12:
-			print(j)
+		var newYear = Array()
+		var newPlaceholderYear = Array()
+		for j in MONTHS_IN_YEAR:
+			var newMonthDate: Dictionary = {
+				"year": 2022 + i,
+				"month": j + 1,
+				"day": 1,
+				"hour": 12,
+				"minute": 0,
+				"second": 0
+			}
+			var daysInMonth = getDaysInMonth(newMonthDate.year, newMonthDate.month)
+			var weekStart = OS.get_datetime_from_unix_time(OS.get_unix_time_from_datetime(newMonthDate)).weekday
+			var maxWeek = (weekStart + daysInMonth) / 7 
+			
 			var placeholder = loadingPlaceholderScene.instance()
-			placeholder.setYear(1950 + i)
-			placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
+			placeholder.setWeeks(maxWeek)
+			placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			placeholder.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
-			placeholderList.append(placeholder)
+			newPlaceholderYear.append(placeholder)
 			
 			var newMonth = monthScene.instance()
-			newMonth.setYear(1950 + i)
+			newMonth.setWeekStart(weekStart)
+			newMonth.setDaysInMonth(daysInMonth)
+			newMonth.setWeeks(maxWeek)
 			newMonth.setMonth(j)
-			newMonth.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
+			newMonth.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			newMonth.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
-			newMonthList.append(newMonth)
+			newYear.append(newMonth)
+		placeholderList.append(newPlaceholderYear)
+		newMonthList.append(newYear)
 	
-	for item in placeholderList:
-		vBoxContainer.add_child(item)
+	for placeholderYear in placeholderList:
+		for item in placeholderYear:
+			vBoxContainer.add_child(item)
 		
 	yield(get_tree(), "idle_frame") #wait one frame to set scroll, it just works
 	
@@ -40,19 +60,19 @@ func _ready():
 
 func _on_scroll_ended():
 	var currentVPos = get_v_scroll()
-	var lowerLimit = currentVPos / ITEM_HEIGHT - (RANGE / 2)
+	var lowerLimit = currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR) - (RANGE / 2)
 	lowerLimit = 0 if lowerLimit < 0 else lowerLimit
-	var higherLimit = lowerLimit + RANGE if lowerLimit + RANGE < MAX_SIZE * 12 else MAX_SIZE * 12 #FIX THIS
-	
+	var higherLimit = lowerLimit + RANGE if lowerLimit + RANGE < MAX_SIZE else MAX_SIZE
 	var scrollList = Array() + placeholderList
 	for i in range(lowerLimit, higherLimit):
 		scrollList.remove(i)
 		scrollList.insert(i, newMonthList[i])
 	
 	delete_children(vBoxContainer)
-	for item in scrollList:
-		vBoxContainer.add_child(item)
-	prints("ended", lowerLimit, higherLimit, currentVPos / ITEM_HEIGHT)
+	for scrollYear in scrollList:
+		for item in scrollYear:
+			vBoxContainer.add_child(item)
+	prints("ended", lowerLimit, higherLimit, currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR))
 	pass
 	
 static func delete_children(node):
@@ -66,3 +86,22 @@ func _input(event: InputEvent) -> void:
 		set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	else:
 		set_mouse_filter(Control.MOUSE_FILTER_STOP)
+		
+func getDaysInMonth(year, month):
+	var isLeapYear: bool
+	var daysInMonth: int
+	if (year % 4 == 0):
+		if (year % 100 == 0):
+			if(year % 400 == 0):
+				isLeapYear = true
+			else:
+				isLeapYear = false
+		else:
+			isLeapYear = true
+	else:
+		isLeapYear = false
+	if month == 2:
+		daysInMonth = 28 + isLeapYear as int
+	else:
+		daysInMonth = 31 - ((month - 1) % 7 % 2) #it just works don't worry about it: http://www.dispersiondesign.com/articles/time/number_of_days_in_a_month
+	return daysInMonth
