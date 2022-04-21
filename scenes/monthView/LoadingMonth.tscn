@@ -1,6 +1,39 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/monthView/LoadingMonth.gd" type="Script" id=1]
+[ext_resource path="res://res/img/loading.png" type="Texture" id=2]
+[ext_resource path="res://res/fonts/fredoka/fredokaDynamic.tres" type="DynamicFont" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "LoadingSpinning"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [node name="Month" type="Control"]
 anchor_right = 1.0
@@ -10,6 +43,7 @@ rect_min_size = Vector2( 720, 1000 )
 mouse_filter = 2
 script = ExtResource( 1 )
 __meta__ = {
+"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
@@ -23,6 +57,57 @@ mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.85098, 0.85098, 0.85098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Loading" type="ColorRect" parent="MonthRect"]
+anchor_left = 0.132
+anchor_right = 0.132
+anchor_bottom = 0.5
+margin_left = 4.36804
+margin_right = 7704.37
+margin_bottom = 466.5
+mouse_filter = 2
+color = Color( 0.85098, 0.85098, 0.85098, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="MonthRect/Loading"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -439.5
+margin_top = -439.5
+margin_right = 439.5
+margin_bottom = 439.5
+rect_pivot_offset = Vector2( 439, 439 )
+mouse_filter = 2
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Animation" type="AnimationPlayer" parent="MonthRect/Loading"]
+root_node = NodePath("../TextureRect")
+autoplay = "LoadingSpinning"
+anims/LoadingSpinning = SubResource( 1 )
+anims/RESET = SubResource( 2 )
+
+[node name="MonthName" type="Label" parent="."]
+anchor_bottom = 0.333
+margin_right = 425.0
+margin_bottom = -0.688995
+rect_scale = Vector2( 3, 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 3 )
+text = "W"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

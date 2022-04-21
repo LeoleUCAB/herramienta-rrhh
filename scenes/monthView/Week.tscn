@@ -30,7 +30,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect1"]
@@ -44,8 +44,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect1"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -54,7 +54,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "01"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Rect2" type="ReferenceRect" parent="GridContainer"]
@@ -64,7 +65,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect2"]
@@ -78,8 +79,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect2"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -88,7 +89,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "01"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Rect3" type="ReferenceRect" parent="GridContainer"]
@@ -98,7 +100,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect3"]
@@ -112,8 +114,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect3"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -122,7 +124,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "01"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Rect4" type="ReferenceRect" parent="GridContainer"]
@@ -132,7 +135,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect4"]
@@ -146,8 +149,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect4"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -156,7 +159,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "01"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Rect5" type="ReferenceRect" parent="GridContainer"]
@@ -166,7 +170,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect5"]
@@ -180,8 +184,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect5"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -190,7 +194,8 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
 text = "01"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
 
 [node name="Rect6" type="ReferenceRect" parent="GridContainer"]
@@ -200,7 +205,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect6"]
@@ -214,8 +219,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect6"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )
@@ -234,7 +239,7 @@ margin_bottom = 933.0
 rect_min_size = Vector2( 1100, 933 )
 mouse_filter = 2
 border_color = Color( 0, 0, 0, 1 )
-border_width = 10.0
+border_width = 20.0
 editor_only = false
 
 [node name="ColorRect" type="ColorRect" parent="GridContainer/Rect7"]
@@ -248,8 +253,8 @@ __meta__ = {
 [node name="DayLabel" type="Label" parent="GridContainer/Rect7"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -40.0
-margin_right = -20.0
+margin_left = -100.0
+margin_right = -37.0
 margin_bottom = 79.0
 grow_horizontal = 0
 rect_scale = Vector2( 3, 3 )

@@ -8,9 +8,10 @@ var newMonthList: Array
 var placeholderList: Array
 
 const RANGE = 3
-const MAX_SIZE = 5
+const MAX_SIZE = 100
 const MONTHS_IN_YEAR = 12
 const WEEKS_IN_YEAR = 52
+const AVERAGE_WEEKS_IN_YEAR = 52.21	
 const ITEM_HEIGHT = 933
 const ITEM_WIDTH = 8876
 
@@ -20,7 +21,7 @@ func _ready():
 		var newPlaceholderYear = Array()
 		for j in MONTHS_IN_YEAR:
 			var newMonthDate: Dictionary = {
-				"year": 2022 + i,
+				"year": 1950 + i,
 				"month": j + 1,
 				"day": 1,
 				"hour": 12,
@@ -33,6 +34,9 @@ func _ready():
 			
 			var placeholder = loadingPlaceholderScene.instance()
 			placeholder.setWeeks(maxWeek)
+			placeholder.setMonth(j)
+			if j % 2:
+				placeholder.setColor(Color("bfbfbf"))
 			placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			placeholder.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 			newPlaceholderYear.append(placeholder)
@@ -54,7 +58,7 @@ func _ready():
 		
 	yield(get_tree(), "idle_frame") #wait one frame to set scroll, it just works
 	
-#	set_v_scroll(ITEM_HEIGHT*(2022-1950))
+	set_v_scroll(ITEM_HEIGHT*(2021-1950)*AVERAGE_WEEKS_IN_YEAR)
 	_on_scroll_ended()
 	pass
 
