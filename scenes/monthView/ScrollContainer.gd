@@ -7,7 +7,7 @@ export var loadingPlaceholderScene: PackedScene
 var newMonthList: Array
 var placeholderList: Array
 
-const RANGE = 3
+const RANGE = 1
 const MAX_SIZE = 100
 const MONTHS_IN_YEAR = 12
 const WEEKS_IN_YEAR = 52
@@ -29,7 +29,7 @@ func _ready():
 				"second": 0
 			}
 			var daysInMonth = getDaysInMonth(newMonthDate.year, newMonthDate.month)
-			var weekStart = OS.get_datetime_from_unix_time(OS.get_unix_time_from_datetime(newMonthDate)).weekday
+			var weekStart = OS.get_datetime_from_unix_time(OS.get_unix_time_from_datetime(newMonthDate)).weekday #sunday = 0
 			var maxWeek = (weekStart + daysInMonth) / 7 
 			
 			var placeholder = loadingPlaceholderScene.instance()
