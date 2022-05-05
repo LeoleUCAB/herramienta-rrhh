@@ -72,6 +72,7 @@ func generateRandomAppointments():
 			"start": start,
 			"end": end,
 			"color": color,
+			"weight": null,
 			"level": null
 		}
 		appointmentList.append(newAppointment)
@@ -80,30 +81,35 @@ func generateRandomAppointments():
 			"start": 5,
 			"end": 6,
 			"color": colorList[4],
+			"weight": null,
 			"level": null
 		},
 		{
 			"start": 5,
 			"end": 6,
 			"color": colorList[4],
+			"weight": null,
 			"level": null
 		},
 		{
 			"start": 2,
 			"end": 5,
 			"color": colorList[3],
+			"weight": null,
 			"level": null
 		},
 		{
 			"start": 2,
 			"end": 3,
 			"color": colorList[2],
+			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 5,
+			"start": 3,
+			"end": 7,
 			"color": colorList[5],
+			"weight": null,
 			"level": null
 		}
 	]
