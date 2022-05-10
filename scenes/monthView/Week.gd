@@ -13,9 +13,25 @@ export var dayScene: PackedScene
 
 func _ready():
 	var inverted: bool = false
-	appointmentList.sort_custom(sortAppointments, "sortByStartDate")
-	var heavyAppointments = setWeight(appointmentList, startDate + 7 - 1)
-#	print(appointmentList)
+	setWeight(appointmentList, startDate + 7 - 1)
+	appointmentList.sort_custom(sortAppointments, "sortByWeight")
+	
+	var appointments = Array()
+	for sortedAppointment in appointmentList:
+			sortedAppointment.level = 0
+			if appointments.size() == 0:
+				appointments.append(sortedAppointment)
+			else:
+				appointments.sort_custom(sortAppointments, "sortByLevel")
+				for appointment in appointments:
+					if sortedAppointment.level == appointment.level:
+						var start = sortedAppointment.start
+						var end = sortedAppointment.end
+						if (start >= appointment.start and start <= appointment.end) or (end >= appointment.start and end <= appointment.end):
+							sortedAppointment.level += 1
+							
+				appointments.append(sortedAppointment)
+				
 	for i in 7:
 		var newDay = dayScene.instance()
 		newDay.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
@@ -28,29 +44,17 @@ func _ready():
 		newDay.setDate(date as String)
 		newDay.setColor(color[0] as Color)
 		newDay.rect_min_size = Vector2(1100, 933)
-		var dayAppointments = Array()
-		for appointment in appointmentList: # appointment: { start: int, end: int, color: Color, level: null }
+		var sortedAppointments = Array()
+		for appointment in appointments: # appointment: { start: int, end: int, color: Color, level: int, weight: int }
 			if appointment.start <= date and appointment.end >= date:
-				dayAppointments.append(appointment)
-		dayAppointments.sort_custom(sortAppointments, "sortByWeight")
+				sortedAppointments.append(appointment)
+		sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
 		var currentLevel = 0
-		for j in dayAppointments.size():
-			var appointment = dayAppointments[j]
-			if appointment.start == date or i == 0:
-				appointment.level = j
-				if i == 0:
-					if (appointment.weight > 1 and appointment.weight < 6):
-						appointment.level += heavyAppointments[0]
-						if appointment.weight < 5:
-							appointment.level += heavyAppointments[2]
-					if (appointment.weight > 2 and appointment.weight < 5):
-						appointment.level += heavyAppointments[1]
-				if i == 1:
-					if (appointment.weight > 1 and appointment.weight < 5):
-						appointment.level += heavyAppointments[0]
+		for j in sortedAppointments.size():
+			var appointment = sortedAppointments[j]
 			if appointment.level != j:
 				newDay.addPlaceholderAppointment(appointment.level - currentLevel)
-			newDay.addAppointment(dayAppointments[j])
+			newDay.addAppointment(sortedAppointments[j])
 			currentLevel = appointment.level + 1
 		grid.add_child(newDay)
 	pass
@@ -68,7 +72,6 @@ func addAppointment(appointment):
 	appointmentList.append(appointment)
 		
 func setWeight(appointments, startDate):
-	var heavyAppointments = Vector3(0, 0, 0)
 	for appointment in appointments:
 		var dateRange = Vector2(startDate, startDate + 7 - 1)
 		if dateRange[0] < appointment.start: #why did i write this in the most confusing logic i could muster?
@@ -79,13 +82,6 @@ func setWeight(appointments, startDate):
 		if weight > 7: #i literally cannot tell if this is necessary and i cba to check
 			weight = 7
 		appointment.weight = weight
-		if weight == 6 and appointment.start - startDate == 1:
-			heavyAppointments[0] += 1
-		if weight == 5 and appointment.start - startDate == 2:
-			heavyAppointments[1] += 1
-		if weight == 5 and appointment.start - startDate == 1:
-			heavyAppointments[2] += 1
-	return heavyAppointments
 
 class sortAppointments:
 	static func sortByStartDate(a, b):
@@ -96,4 +92,13 @@ class sortAppointments:
 	static func sortByWeight(a, b):
 		if a.weight > b.weight:
 			return true
+		elif a.weight == b.weight:
+			return sortByStartDate(a, b)
+		return false
+		
+	static func sortByLevel(a, b):
+		if a.level < b.level:
+			return true
+		if a.level == b.level:
+			return sortByStartDate(a, b)
 		return false

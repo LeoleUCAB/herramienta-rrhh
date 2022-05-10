@@ -6,6 +6,7 @@ onready var dayRect = $Rect/ColorRect
 onready var grid = $Rect/GridContainer
 
 const placeholderAppointment = {
+	"start": 0,
 	"color": Color(0, 0, 0, 0)
 }
 
@@ -19,7 +20,11 @@ func _ready():
 	for appointmentItem in appointmentList:
 		var newAppointment = ColorRect.new()
 		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
-		newAppointment.rect_min_size = Vector2(1000,50)
+		var rectSize = Vector2(1000, 50)
+		print(appointmentItem)
+		if date as int == appointmentItem.start:
+			rectSize += Vector2(1100 * (appointmentItem.weight - 1), 0)
+		newAppointment.rect_min_size = rectSize
 		newAppointment.color = appointmentItem.color
 		grid.add_child(newAppointment)
 	pass

@@ -111,6 +111,13 @@ func generateRandomAppointments():
 			"color": colorList[5],
 			"weight": null,
 			"level": null
+		},
+		{
+			"start": 6,
+			"end": 8,
+			"color": colorList[0],
+			"weight": null,
+			"level": null
 		}
 	]
 	appointmentList.append_array(debugAppointment)
