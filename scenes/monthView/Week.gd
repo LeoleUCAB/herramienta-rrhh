@@ -56,6 +56,9 @@ func _ready():
 				newDay.addPlaceholderAppointment(appointment.level - currentLevel)
 			newDay.addAppointment(sortedAppointments[j])
 			currentLevel = appointment.level + 1
+		newDay.lastDay = false
+		if i == 6:
+			newDay.lastDay = true
 		grid.add_child(newDay)
 	pass
 

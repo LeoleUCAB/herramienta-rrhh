@@ -78,16 +78,23 @@ func generateRandomAppointments():
 		appointmentList.append(newAppointment)
 	var debugAppointment = [
 		{
-			"start": 5,
-			"end": 6,
-			"color": colorList[4],
+			"start": 2,
+			"end": 8,
+			"color": colorList[0],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 5,
+			"start": 2,
+			"end": 7,
+			"color": colorList[1],
+			"weight": null,
+			"level": null
+		},
+		{
+			"start": 2,
 			"end": 6,
-			"color": colorList[4],
+			"color": colorList[2],
 			"weight": null,
 			"level": null
 		},
@@ -100,22 +107,15 @@ func generateRandomAppointments():
 		},
 		{
 			"start": 2,
+			"end": 4,
+			"color": colorList[4],
+			"weight": null,
+			"level": null
+		},
+		{
+			"start": 2,
 			"end": 3,
-			"color": colorList[2],
-			"weight": null,
-			"level": null
-		},
-		{
-			"start": 3,
-			"end": 7,
 			"color": colorList[5],
-			"weight": null,
-			"level": null
-		},
-		{
-			"start": 6,
-			"end": 8,
-			"color": colorList[0],
 			"weight": null,
 			"level": null
 		}
