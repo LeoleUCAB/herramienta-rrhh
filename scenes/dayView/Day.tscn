@@ -1,0 +1,727 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://res/fonts/fredoka/fredokaDynamic32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scenes/dayView/Day.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -180.0
+margin_bottom = 213.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hours" type="GridContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AllDay" type="GridContainer" parent="Hours"]
+margin_right = 1100.0
+margin_bottom = 72.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/AllDay"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/AllDay/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "All Day"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/AllDay"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="GridContainer" type="GridContainer" parent="Hours/AllDay/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 5.0
+margin_right = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0h" type="GridContainer" parent="Hours"]
+margin_top = 72.0
+margin_right = 1100.0
+margin_bottom = 144.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/0h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/0h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "0:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/0h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/0h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8h" type="GridContainer" parent="Hours"]
+margin_top = 144.0
+margin_right = 1100.0
+margin_bottom = 216.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/8h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/8h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "8:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/8h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/8h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="9h" type="GridContainer" parent="Hours"]
+margin_top = 216.0
+margin_right = 1100.0
+margin_bottom = 288.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/9h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/9h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "9:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/9h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/9h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="10h" type="GridContainer" parent="Hours"]
+margin_top = 288.0
+margin_right = 1100.0
+margin_bottom = 360.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/10h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/10h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "10:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/10h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/10h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="11h" type="GridContainer" parent="Hours"]
+margin_top = 360.0
+margin_right = 1100.0
+margin_bottom = 432.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/11h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/11h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "11:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/11h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/11h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="12h" type="GridContainer" parent="Hours"]
+margin_top = 432.0
+margin_right = 1100.0
+margin_bottom = 504.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/12h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/12h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "12:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/12h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/12h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="13h" type="GridContainer" parent="Hours"]
+margin_top = 504.0
+margin_right = 1100.0
+margin_bottom = 576.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/13h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/13h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "13:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/13h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/13h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="14h" type="GridContainer" parent="Hours"]
+margin_top = 576.0
+margin_right = 1100.0
+margin_bottom = 648.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/14h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/14h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "14:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/14h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/14h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="15h" type="GridContainer" parent="Hours"]
+margin_top = 648.0
+margin_right = 1100.0
+margin_bottom = 720.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/15h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/15h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "15:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/15h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/15h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="16h" type="GridContainer" parent="Hours"]
+margin_top = 720.0
+margin_right = 1100.0
+margin_bottom = 792.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/16h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/16h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "16:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/16h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/16h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="17h" type="GridContainer" parent="Hours"]
+margin_top = 792.0
+margin_right = 1100.0
+margin_bottom = 864.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/17h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/17h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "17:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/17h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/17h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="24h" type="GridContainer" parent="Hours"]
+margin_top = 864.0
+margin_right = 1100.0
+margin_bottom = 936.0
+custom_constants/vseparation = 0
+custom_constants/hseparation = 0
+columns = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Hours/24h"]
+margin_right = 150.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 150, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+
+[node name="Label" type="Label" parent="Hours/24h/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 150.0
+margin_bottom = 74.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "0:00"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Content" type="ReferenceRect" parent="Hours/24h"]
+margin_left = 150.0
+margin_right = 1100.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 950, 72 )
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Hours/24h/Content"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="ReferenceRect" type="ReferenceRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+border_color = Color( 0, 0, 0, 1 )
+border_width = 10.0
+editor_only = false
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
