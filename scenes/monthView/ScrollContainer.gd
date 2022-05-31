@@ -7,11 +7,14 @@ export var loadingPlaceholderScene: PackedScene
 var newMonthList: Array
 var placeholderList: Array
 
-const RANGE = 1
+var highQuality = false
+
+const RANGE = 3
+const MONTH_RANGE = 5
 const MAX_SIZE = 100
 const MONTHS_IN_YEAR = 12
 const WEEKS_IN_YEAR = 52
-const AVERAGE_WEEKS_IN_YEAR = 52.21	
+const AVERAGE_WEEKS_IN_YEAR = 52.21
 const ITEM_HEIGHT = 933
 const ITEM_WIDTH = 8876
 
@@ -64,7 +67,20 @@ func _ready():
 
 func _on_scroll_ended():
 	var currentVPos = get_v_scroll()
-	var lowerLimit = currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR) - (RANGE / 2)
+	
+	#unbelievably awful code that works, it tells you which month within the year you're on
+	var currentMonth = (currentVPos % (ITEM_HEIGHT * AVERAGE_WEEKS_IN_YEAR) as int) + 4
+	currentMonth /= ITEM_HEIGHT
+	currentMonth /= ((AVERAGE_WEEKS_IN_YEAR / WEEKS_IN_YEAR) * 4) as int
+	currentMonth += 1
+	currentMonth = 12 if currentMonth > 12 else currentMonth
+	
+	var currentYear = currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR)
+	
+	var currentScrollMonth = currentYear * 12 + currentMonth
+	var focusRange = Vector2(currentScrollMonth - (MONTH_RANGE / 2),  currentScrollMonth + (MONTH_RANGE / 2))
+	
+	var lowerLimit = currentYear - (RANGE / 2)
 	lowerLimit = 0 if lowerLimit < 0 else lowerLimit
 	var higherLimit = lowerLimit + RANGE if lowerLimit + RANGE < MAX_SIZE else MAX_SIZE
 	var scrollList = Array() + placeholderList
@@ -73,10 +89,18 @@ func _on_scroll_ended():
 		scrollList.insert(i, newMonthList[i])
 	
 	delete_children(vBoxContainer)
-	for scrollYear in scrollList:
-		for item in scrollYear:
+	for i in scrollList.size():
+		var scrollYear = scrollList[i]
+		for j in scrollYear.size():
+			var item = scrollYear[j]
+			item.focused = false
+			var monthPosition = i * 12 + j + 1
+			item.setHighQuality(highQuality)
+			if monthPosition >= focusRange[0] and monthPosition <= focusRange[1]:
+				prints(monthPosition, focusRange)
+				item.focused = true
 			vBoxContainer.add_child(item)
-	prints("ended", lowerLimit, higherLimit, currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR))
+	#prints("ended", lowerLimit, higherLimit, currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR))
 	pass
 	
 static func delete_children(node):
@@ -109,3 +133,17 @@ func getDaysInMonth(year, month):
 	else:
 		daysInMonth = 31 - ((month - 1) % 7 % 2) #it just works don't worry about it: http://www.dispersiondesign.com/articles/time/number_of_days_in_a_month
 	return daysInMonth
+
+
+func _on_zoomed(zoomValue):
+	var srLatch: bool
+	if zoomValue < Vector2(5, 5):
+		srLatch = true
+	else:
+		srLatch = false
+	if srLatch != highQuality:
+		highQuality = srLatch
+		for year in newMonthList:
+			for month in year:
+				month.setHighQuality(highQuality)
+	

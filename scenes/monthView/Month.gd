@@ -12,6 +12,9 @@ var weeks: int = 4 setget setWeeks
 var daysInMonth: int = 30 setget setDaysInMonth
 var month: int = 0 setget setMonth #January is 0
 var appointmentList: Array = Array()
+var highQuality = false setget setHighQuality
+var weekList: Array
+var focused: bool = false
 
 const monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
@@ -25,6 +28,7 @@ func _ready():
 	for i in weeks:
 		var newWeek = weekScene.instance()
 		newWeek.setDaysInMonth(daysInMonth)
+		newWeek.setHighQuality(highQuality)
 		var startDate = i * 7 - weekStart + 1
 		var appointmentRange: Vector2 = Vector2(startDate - 1 + 7, startDate - 1 + 14)
 		newWeek.setStartDate(startDate)
@@ -37,8 +41,10 @@ func _ready():
 				newWeek.addAppointment(appointment)
 			elif appointment.start <= appointmentRange[0] and appointment.end >= appointmentRange[1]: # started in another week and ends later still
 				newWeek.addAppointment(appointment)
-		gridContainer.add_child(newWeek)
+		weekList.append(newWeek)
 		monthName.text = verticalString(monthArray[month])
+	for week in weekList:
+		gridContainer.add_child(week)
 	pass
 
 func setWeekStart(value):
@@ -52,6 +58,12 @@ func setDaysInMonth(value):
 
 func setMonth(value):
 	month = value
+	
+func setHighQuality(value):
+	highQuality = value
+	for week in weekList:
+		week.focused = focused
+		week.setHighQuality(highQuality)
 
 func generateRandomAppointments():
 	var rng = RandomNumberGenerator.new()
@@ -78,43 +90,43 @@ func generateRandomAppointments():
 		appointmentList.append(newAppointment)
 	var debugAppointment = [
 		{
-			"start": 2,
+			"start": 8,
 			"end": 8,
 			"color": colorList[0],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 7,
+			"start": 7,
+			"end": 8,
 			"color": colorList[1],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 6,
+			"start": 6,
+			"end": 8,
 			"color": colorList[2],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 5,
+			"start": 5,
+			"end": 8,
 			"color": colorList[3],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 4,
+			"start": 4,
+			"end": 8,
 			"color": colorList[4],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 3,
+			"start": 3,
+			"end": 8,
 			"color": colorList[5],
 			"weight": null,
 			"level": null

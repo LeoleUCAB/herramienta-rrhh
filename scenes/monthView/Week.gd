@@ -5,10 +5,14 @@ var daysInMonth = 30 setget setDaysInMonth
 var color = [Color("d9d9d9"), Color("bfbfbf")]
 var dayList: Array
 var appointmentList: Array = Array()
+var highQuality = false setget setHighQuality
+var highQualityDayList: Array
+var focused: bool = false
 
 onready var grid = $GridContainer
 
 export var dayScene: PackedScene
+export var daySceneHQ: PackedScene
 
 
 func _ready():
@@ -59,7 +63,15 @@ func _ready():
 		newDay.lastDay = false
 		if i == 6:
 			newDay.lastDay = true
-		grid.add_child(newDay)
+		dayList.append(newDay)
+		
+		var newDayHQ = daySceneHQ.instance()
+		newDayHQ.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		newDayHQ.rect_min_size = Vector2(1100, 933)
+		newDayHQ.setColor(color[0] as Color)
+		highQualityDayList.append(newDayHQ)
+		
+		addDays()
 	pass
 
 func setStartDate(value):
@@ -67,6 +79,10 @@ func setStartDate(value):
 
 func setDaysInMonth(value):
 	daysInMonth = value
+	
+func setHighQuality(value):
+	highQuality = value
+	addDays()
 	
 func invertColors():
 	color.invert()
@@ -105,3 +121,17 @@ class sortAppointments:
 		if a.level == b.level:
 			return sortByStartDate(a, b)
 		return false
+	
+func addDays():
+	if grid != null:
+		delete_children(grid)
+		if highQuality and focused:
+			for day in highQualityDayList:
+				grid.add_child(day)
+		else:
+			for day in dayList:
+				grid.add_child(day)
+			
+static func delete_children(node):
+	for n in node.get_children():
+		node.remove_child(n)

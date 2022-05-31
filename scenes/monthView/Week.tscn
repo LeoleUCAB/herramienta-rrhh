@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/monthView/Day.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/monthView/Week.gd" type="Script" id=2]
+[ext_resource path="res://scenes/dayView/Day.tscn" type="PackedScene" id=3]
 
 [node name="Week" type="Control"]
 anchor_right = 1.0
@@ -13,6 +14,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 dayScene = ExtResource( 1 )
+daySceneHQ = ExtResource( 3 )
 
 [node name="GridContainer" type="GridContainer" parent="."]
 anchor_right = 1.0

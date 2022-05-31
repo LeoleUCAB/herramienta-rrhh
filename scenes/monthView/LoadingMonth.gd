@@ -6,6 +6,7 @@ onready var monthName = $MonthName
 var weeks: int = 4 setget setWeeks
 var color: Color = Color("d9d9d9") setget setColor
 var month: int = 0 setget setMonth #January is 0
+var focused: bool = false
 
 const monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
@@ -24,6 +25,9 @@ func setColor(value):
 
 func setMonth(value):
 	month = value
+	
+func setHighQuality(value):
+	return
 
 func verticalString(string):
 	var verticalString: String = ""

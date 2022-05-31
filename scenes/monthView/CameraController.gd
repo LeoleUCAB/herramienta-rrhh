@@ -7,7 +7,7 @@ const CALENDAR_WIDTH = 1280
 const CALENDAR_HEIGHT = 720
 
 #signal moved()
-#signal zoomed()
+signal zoomed(zoomValue)
 
 var deltaValue = 0
 
@@ -55,5 +55,6 @@ func _update_zoom(incr, zoom_anchor):
 	var zoom_center = zoom_anchor - get_offset()
 	var ratio = 1-_current_zoom_level/old_zoom
 	set_offset(get_offset() + zoom_center*ratio)
-	
+	var zoomLevel = Vector2(_current_zoom_level, _current_zoom_level)
 	set_zoom(Vector2(_current_zoom_level, _current_zoom_level))
+	emit_signal("zoomed", zoomLevel)

@@ -1,6 +1,8 @@
 extends Control
 
 var appointmentList: Array = Array()
+var maxColumns = 1
+var color: Color
 
 onready var hours = [
 	$Hours/AllDay/Content/GridContainer,
@@ -17,15 +19,23 @@ onready var hours = [
 	$Hours/'17h'/Content/GridContainer,
 	$Hours/'24h'/Content/GridContainer,
 ]
+onready var background = $Background
 const GRID_WIDTH = 945
 const GRID_HEIGHT = 67
 const GRID_MARGIN = 5
 const GRID_H_SEPARATION = 4
+const HOUR_HEIGHT = 72
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	background.color = color
+	
 	generateRandomAppointments()
+	setWeight()
 	appointmentList.sort_custom(sortAppointments, "sortByWeight")
+	setLevel()
+	appointmentList.sort_custom(sortAppointments, "sortByLevel")
+#	print(appointmentList)
 	for i in hours.size():
 		var hourAppointments = Array()
 		var hour = hours[i]
@@ -33,29 +43,81 @@ func _ready():
 		if i == 0:
 			continue
 		for appointment in appointmentList:
-			if i == 1 && appointment.start <= 8:
+			if i == 1 && appointment.start < 8:
 				hourAppointments.append(appointment)
 			elif i == hours.size() - 1 && appointment.end > 17:
 				hourAppointments.append(appointment)
 			elif currentTime >= appointment.start && currentTime <= appointment.end:
 				hourAppointments.append(appointment)
 		if !hourAppointments.empty():
-			addAppointment(hour, hourAppointments)
-	pass # Replace with function body.
-	
-func maxColumns():
+			addAppointment(hour, hourAppointments, currentTime)
 	pass
 
-func addAppointment(hour, appointments):
-	var size = appointments.size()
-	var rectWidth = ((GRID_WIDTH - GRID_MARGIN) / size) - (GRID_H_SEPARATION)
+func setColor(value):
+	color = value
+
+func setWeight():
+	for appointment in appointmentList:
+		var weight = 0
+		var start = appointment.start
+		var end = appointment.end
+		if start < 8:
+			weight += 1
+			start = 8
+		if end > 17:
+			weight += 1
+			end = 17
+		weight += end - start + 1
+		if weight < 0:
+			weight = 0
+		appointment.weight = weight
+
+func setLevel():
+	var sortedAppointments = Array()
+	var maxLevel = 0
+	for i in appointmentList.size():
+		var appointment = appointmentList[i]
+		appointment.level = 0
+		if i == 0:
+			sortedAppointments.append(appointment)
+			continue
+		sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
+		for sortedAppointment in sortedAppointments:
+			if appointment.level == sortedAppointment.level:
+				var start = sortedAppointment.start
+				var end = sortedAppointment.end
+				if (appointment.start >= start and appointment.start <= end) or (appointment.end >= start and appointment.end <= end):
+					appointment.level += 1
+					if appointment.level > maxLevel:
+						maxLevel = appointment.level
+		sortedAppointments.append(appointment)
+	maxColumns = maxLevel + 1
+		
+
+func addAppointment(hour, appointments, currentTime):
+	var rectWidth = ((GRID_WIDTH - GRID_MARGIN) / maxColumns) - (GRID_H_SEPARATION)
 	var rectHeight = GRID_HEIGHT - GRID_MARGIN
-	hour.columns = size #change this, has to be global
-	for appointment in appointments:
+	var rectSize = Vector2(rectWidth, rectHeight)
+	hour.columns = maxColumns
+	var currentLevel = 0
+	for i in appointments.size():
+		var appointment = appointments[i]
+		if (i + currentLevel) < appointment.level:
+			for j in (appointment.level - (i + currentLevel)):
+				var placeholder = ColorRect.new()
+				placeholder.color = Color(1, 1, 1, 0)
+				placeholder.rect_min_size = Vector2(rectWidth, rectHeight)
+				placeholder.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+				hour.add_child(placeholder)
+			currentLevel = appointment.level + 1
 		var newAppointment = ColorRect.new()
 		newAppointment.color = appointment.color
-		newAppointment.rect_min_size = Vector2(rectWidth, rectHeight)
+		if currentTime == appointment.end:
+			pass #LMAO IT DOESN'T WORK I SCREWED UP
+		newAppointment.rect_min_size = rectSize
+		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 		hour.add_child(newAppointment)
+	
 
 func generateRandomAppointments():
 	var rng = RandomNumberGenerator.new()
@@ -68,18 +130,18 @@ func generateRandomAppointments():
 		Color.orchid,
 		Color.gold
 	]
-	for i in range(rng.randi_range(0, 6)):
-		var start = rng.randi_range(0, 24)
-		var end = rng.randi_range(start, 24)
-		var color = colorList[i]
-		var newAppointment = {
-			"start": start,
-			"end": end,
-			"color": color,
-			"weight": null,
-			"level": null
-		}
-		appointmentList.append(newAppointment)
+#	for i in range(rng.randi_range(0, 6)):
+#		var start = rng.randi_range(0, 24)
+#		var end = rng.randi_range(start, 24)
+#		var color = colorList[i]
+#		var newAppointment = {
+#			"start": start,
+#			"end": end,
+#			"color": color,
+#			"weight": null,
+#			"level": null
+#		}
+#		appointmentList.append(newAppointment)
 	var debugAppointment = [
 		{
 			"start": 2,
@@ -89,35 +151,35 @@ func generateRandomAppointments():
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 13,
+			"start": 12,
+			"end": 17,
 			"color": colorList[1],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 12,
+			"start": 11,
+			"end": 15,
 			"color": colorList[2],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 11,
+			"start": 10,
+			"end": 13,
 			"color": colorList[3],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
-			"end": 10,
+			"start": 9,
+			"end": 11,
 			"color": colorList[4],
 			"weight": null,
 			"level": null
 		},
 		{
-			"start": 2,
+			"start": 8,
 			"end": 9,
 			"color": colorList[5],
 			"weight": null,
@@ -125,18 +187,6 @@ func generateRandomAppointments():
 		}
 	]
 	appointmentList.append_array(debugAppointment)
-	
-func setWeight(appointments):
-	for appointment in appointments:
-		var dateRange = Vector2(0, 24)
-		if dateRange[0] < appointment.start: 
-			dateRange[0] = appointment.start
-		if dateRange[1] > appointment.end:
-			dateRange[1] = appointment.end
-		var weight = dateRange[1] - dateRange[0] + 1
-		if weight > 12: 
-			weight = 12
-		appointment.weight = weight
 
 class sortAppointments:
 	static func sortByStartDate(a, b):

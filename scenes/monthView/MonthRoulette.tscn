@@ -31,3 +31,4 @@ zoom = Vector2( 6.925, 6.925 )
 script = ExtResource( 2 )
 
 [connection signal="scroll_ended" from="ScrollContainer" to="ScrollContainer" method="_on_scroll_ended"]
+[connection signal="zoomed" from="Camera2D" to="ScrollContainer" method="_on_zoomed"]

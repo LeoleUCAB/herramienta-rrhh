@@ -25,8 +25,8 @@ func _ready():
 		var newAppointment = ColorRect.new()
 		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 		var rectSize = Vector2(1000, 50)
-		if date as int == appointmentItem.end or lastDay:
-			rectSize += Vector2(1100 * (appointmentItem.weight - 1), 0)
+#		if date as int == appointmentItem.end or lastDay:
+#			rectSize += Vector2(1100 * (appointmentItem.weight - 1), 0)
 		newAppointment.rect_min_size = rectSize
 		newAppointment.color = appointmentItem.color
 		grid.add_child(newAppointment)
