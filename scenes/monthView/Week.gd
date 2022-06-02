@@ -7,7 +7,6 @@ var dayList: Array
 var appointmentList: Array = Array()
 var highQuality = false setget setHighQuality
 var highQualityDayList: Array
-var focused: bool = false
 
 onready var grid = $GridContainer
 
@@ -125,7 +124,7 @@ class sortAppointments:
 func addDays():
 	if grid != null:
 		delete_children(grid)
-		if highQuality and focused:
+		if highQuality:
 			for day in highQualityDayList:
 				grid.add_child(day)
 		else:

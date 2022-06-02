@@ -14,7 +14,6 @@ var month: int = 0 setget setMonth #January is 0
 var appointmentList: Array = Array()
 var highQuality = false setget setHighQuality
 var weekList: Array
-var focused: bool = false
 
 const monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
@@ -62,7 +61,6 @@ func setMonth(value):
 func setHighQuality(value):
 	highQuality = value
 	for week in weekList:
-		week.focused = focused
 		week.setHighQuality(highQuality)
 
 func generateRandomAppointments():

@@ -69,16 +69,15 @@ func _on_scroll_ended():
 	var currentVPos = get_v_scroll()
 	
 	#unbelievably awful code that works, it tells you which month within the year you're on
-	var currentMonth = (currentVPos % (ITEM_HEIGHT * AVERAGE_WEEKS_IN_YEAR) as int) + 4
-	currentMonth /= ITEM_HEIGHT
-	currentMonth /= ((AVERAGE_WEEKS_IN_YEAR / WEEKS_IN_YEAR) * 4) as int
-	currentMonth += 1
-	currentMonth = 12 if currentMonth > 12 else currentMonth
+	var currentMonthInScroll = (currentVPos / (ITEM_HEIGHT * (AVERAGE_WEEKS_IN_YEAR / MONTHS_IN_YEAR)) as int) + 1
+	var currentMonthInYear = (currentVPos % (ITEM_HEIGHT * AVERAGE_WEEKS_IN_YEAR) as int) + 4
+	currentMonthInYear /= ITEM_HEIGHT
+	currentMonthInYear /= ((AVERAGE_WEEKS_IN_YEAR / WEEKS_IN_YEAR) * 4) as int
+	currentMonthInYear += 1
+	currentMonthInYear = 12 if currentMonthInYear > 12 else currentMonthInYear
 	
 	var currentYear = currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR)
-	
-	var currentScrollMonth = currentYear * 12 + currentMonth
-	var focusRange = Vector2(currentScrollMonth - (MONTH_RANGE / 2),  currentScrollMonth + (MONTH_RANGE / 2))
+	var focusRange = Vector2(currentMonthInScroll - (MONTH_RANGE / 2),  currentMonthInScroll + (MONTH_RANGE / 2))
 	
 	var lowerLimit = currentYear - (RANGE / 2)
 	lowerLimit = 0 if lowerLimit < 0 else lowerLimit
@@ -93,12 +92,11 @@ func _on_scroll_ended():
 		var scrollYear = scrollList[i]
 		for j in scrollYear.size():
 			var item = scrollYear[j]
-			item.focused = false
 			var monthPosition = i * 12 + j + 1
-			item.setHighQuality(highQuality)
 			if monthPosition >= focusRange[0] and monthPosition <= focusRange[1]:
-				prints(monthPosition, focusRange)
-				item.focused = true
+				item.setHighQuality(highQuality)
+			else:
+				item.setHighQuality(false)
 			vBoxContainer.add_child(item)
 	#prints("ended", lowerLimit, higherLimit, currentVPos / (ITEM_HEIGHT * WEEKS_IN_YEAR))
 	pass
@@ -143,7 +141,5 @@ func _on_zoomed(zoomValue):
 		srLatch = false
 	if srLatch != highQuality:
 		highQuality = srLatch
-		for year in newMonthList:
-			for month in year:
-				month.setHighQuality(highQuality)
+		_on_scroll_ended()
 	
