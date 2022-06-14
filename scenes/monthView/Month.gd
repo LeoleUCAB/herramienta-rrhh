@@ -41,9 +41,11 @@ func _ready():
 			elif appointment.start <= appointmentRange[0] and appointment.end >= appointmentRange[1]: # started in another week and ends later still
 				newWeek.addAppointment(appointment)
 		weekList.append(newWeek)
-		monthName.text = verticalString(monthArray[month])
+		
 	for week in weekList:
 		gridContainer.add_child(week)
+	
+	monthName.text = verticalString(monthArray[month])
 	pass
 
 func setWeekStart(value):
@@ -74,16 +76,24 @@ func generateRandomAppointments():
 		Color.orchid,
 		Color.gold
 	]
-	for i in range(rng.randi_range(0, 4)):
-		var start = rng.randi_range(1, daysInMonth)
-		var end = rng.randi_range(start, daysInMonth)
-		var color = colorList[i]
+	for i in range(rng.randi_range(0, 8)):
+		var isItDayLong: bool = rng.randi() % 2
+		var start: int
+		var end: int
+		if isItDayLong:
+			start = rng.randi_range(1, daysInMonth)
+			end = rng.randi_range(start, daysInMonth)
+		else:
+			start = rng.randi_range(0, 24)
+			end = rng.randi_range(start, 24)
+		var color = colorList[rng.randi_range(0, 5)]
 		var newAppointment = {
 			"start": start,
 			"end": end,
 			"color": color,
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": isItDayLong
 		}
 		appointmentList.append(newAppointment)
 	var debugAppointment = [
@@ -92,42 +102,48 @@ func generateRandomAppointments():
 			"end": 8,
 			"color": colorList[0],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		},
 		{
 			"start": 7,
 			"end": 8,
 			"color": colorList[1],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		},
 		{
 			"start": 6,
 			"end": 8,
 			"color": colorList[2],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		},
 		{
 			"start": 5,
 			"end": 8,
 			"color": colorList[3],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		},
 		{
 			"start": 4,
 			"end": 8,
 			"color": colorList[4],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		},
 		{
 			"start": 3,
 			"end": 8,
 			"color": colorList[5],
 			"weight": null,
-			"level": null
+			"level": null,
+			"isItDaylong": true
 		}
 	]
 	appointmentList.append_array(debugAppointment)
