@@ -1,13 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://scenes/yearView/YearRoulette.gd" type="Script" id=1]
 [ext_resource path="res://CameraController.gd" type="Script" id=2]
 [ext_resource path="res://scenes/yearView/ScrollContainer.gd" type="Script" id=3]
 [ext_resource path="res://scenes/yearView/Year.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/yearView/LoadingYear.tscn" type="PackedScene" id=5]
 
 [node name="YearRoulette" type="Node2D"]
-script = ExtResource( 1 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_right = 35852.0

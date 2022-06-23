@@ -10,7 +10,7 @@
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 margin_right = 12.0
 margin_bottom = 12.0
-rect_min_size = Vector2( 8876, 5600 )
+rect_min_size = Vector2( 8876, 6500 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -26,9 +26,8 @@ rect_min_size = Vector2( 8876, 5600 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -0.00488281, -0.00634766 )
 anchor_mode = 0
-current = true
 zoom = Vector2( 6.925, 6.925 )
 script = ExtResource( 2 )
 
 [connection signal="scroll_ended" from="ScrollContainer" to="ScrollContainer" method="_on_scroll_ended"]
-[connection signal="zoomed" from="Camera2D" to="ScrollContainer" method="_on_zoomed"]
+[connection signal="highQualityToggle" from="Camera2D" to="ScrollContainer" method="_on_highQualityToggle"]

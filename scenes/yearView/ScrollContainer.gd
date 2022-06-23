@@ -6,6 +6,12 @@ export var loadingPlaceholderScene: PackedScene
 
 var newYearList: Array
 var placeholderList: Array
+var hoverValue = {
+	"year": 1900,
+	"month": -1
+}
+
+signal updateHover(hoverValue)
 
 const RANGE = 5
 const MAX_SIZE = 100
@@ -17,13 +23,14 @@ func _ready():
 		var placeholder = loadingPlaceholderScene.instance()
 		placeholder.setYear(1950 + i)
 		placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
-		placeholder.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		placeholder.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		placeholderList.append(placeholder)
 		
 		var newYear = yearScene.instance()
 		newYear.setYear(1950 + i)
 		newYear.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
-		newYear.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		newYear.set_mouse_filter(Control.MOUSE_FILTER_PASS)
+		newYear.connect("updateYearHover", self, "updateYearHover")
 		newYearList.append(newYear)
 	
 	for item in placeholderList:
@@ -63,3 +70,9 @@ func _input(event: InputEvent) -> void:
 		set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	else:
 		set_mouse_filter(Control.MOUSE_FILTER_STOP)
+
+func updateYearHover(value):
+	if value.year != hoverValue.year or value.month != hoverValue.month:
+		hoverValue.year = value.year
+		hoverValue.month = value.month
+		emit_signal("updateHover", hoverValue)

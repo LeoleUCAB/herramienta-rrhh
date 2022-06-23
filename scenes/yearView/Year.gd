@@ -6,6 +6,12 @@ onready var yearNumber = $YearNumber
 export var monthScene: PackedScene
 
 var year: int = 1900 setget setYear
+var hoverValue = {
+	"year": year,
+	"month": -1
+}
+
+signal updateYearHover(hoverValue)
 
 func _ready():
 	yearNumber.text = year as String
@@ -27,6 +33,7 @@ func _ready():
 			"daysInMonth": getDaysInMonth(i+1)
 		}
 		newMonth.init(initDict)
+		newMonth.connect("monthHover", self, "updateMonthHover")
 		grid.add_child(newMonth)
 	pass
 	
@@ -51,4 +58,10 @@ func getDaysInMonth(month):
 	
 func setYear(value):
 	year = value
+	
+func updateMonthHover(month):
+	if hoverValue.month != month:
+		hoverValue.month = month
+		hoverValue.year = year
+		emit_signal("updateYearHover", hoverValue)
 

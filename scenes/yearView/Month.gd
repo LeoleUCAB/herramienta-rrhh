@@ -11,9 +11,12 @@ const monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Juli
 onready var grid = $DayGrid
 onready var monthName = $MonthName
 
+signal monthHover(month)
+
 func _ready():
 	for i in range(daysInMonth + weekStart):
 		var newDay = dayScene.instance()
+		newDay.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		grid.add_child(newDay)
 		newDay.dayNumber = i+1-weekStart
 		if(i < weekStart):
@@ -26,3 +29,7 @@ func init(param: Dictionary): #{"year": int, "month": int, "weekStart": int, "da
 	weekStart = param.weekStart
 	daysInMonth = param.daysInMonth
 	pass
+
+
+func _on_Month_mouse_entered():
+	emit_signal("monthHover", month)

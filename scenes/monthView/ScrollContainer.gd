@@ -15,6 +15,7 @@ const MAX_SIZE = 100
 const MONTHS_IN_YEAR = 12
 const WEEKS_IN_YEAR = 52
 const AVERAGE_WEEKS_IN_YEAR = 52.21
+const AVERAGE_WEEKS_IN_MONTH = 4.35
 const ITEM_HEIGHT = 933
 const ITEM_WIDTH = 8876
 
@@ -39,7 +40,7 @@ func _ready():
 			placeholder.setWeeks(maxWeek)
 			placeholder.setMonth(j)
 			if j % 2:
-				placeholder.setColor(Color("bfbfbf"))
+					placeholder.setColor(Color("bfbfbf"))
 			placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			placeholder.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 			newPlaceholderYear.append(placeholder)
@@ -132,14 +133,9 @@ func getDaysInMonth(year, month):
 		daysInMonth = 31 - ((month - 1) % 7 % 2) #it just works don't worry about it: http://www.dispersiondesign.com/articles/time/number_of_days_in_a_month
 	return daysInMonth
 
-
-func _on_zoomed(zoomValue):
-	var srLatch: bool
-	if zoomValue < Vector2(5, 5):
-		srLatch = true
-	else:
-		srLatch = false
-	if srLatch != highQuality:
-		highQuality = srLatch
-		_on_scroll_ended()
+func _on_highQualityToggle(value):
+	highQuality = value
+	_on_scroll_ended()
 	
+func goToDate(dateValue): #{ year: int, month: int }
+	set_v_scroll(ITEM_HEIGHT*((dateValue.year-1951)*AVERAGE_WEEKS_IN_YEAR + (dateValue.month-1)*AVERAGE_WEEKS_IN_MONTH))
