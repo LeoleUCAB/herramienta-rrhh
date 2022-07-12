@@ -17,6 +17,8 @@ const RANGE = 5
 const MAX_SIZE = 100
 const ITEM_HEIGHT = 23000
 const ITEM_WIDTH = 35850
+const ITEM_MONTH_HEIGHT = 3000
+const YEAR_LABEL_HEIGHT = 2483
 
 func _ready():
 	for i in range(MAX_SIZE):
@@ -76,3 +78,7 @@ func updateYearHover(value):
 		hoverValue.year = value.year
 		hoverValue.month = value.month
 		emit_signal("updateHover", hoverValue)
+		
+func goToDate(date):
+	set_v_scroll(ITEM_HEIGHT*(date.year-1950) - YEAR_LABEL_HEIGHT / 7 * 4 + ITEM_MONTH_HEIGHT * floor((date.month - 1) / 4))
+	pass

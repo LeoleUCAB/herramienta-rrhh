@@ -7,8 +7,11 @@ var dayList: Array
 var appointmentList: Array = Array()
 var highQuality = false setget setHighQuality
 var highQualityDayList: Array
+var month = 1 setget setMonth
 
 onready var grid = $GridContainer
+
+signal updateWeekHover(month)
 
 export var dayScene: PackedScene
 export var daySceneHQ: PackedScene
@@ -21,23 +24,23 @@ func _ready():
 	
 	var appointments = Array()
 	for sortedAppointment in appointmentList:
-			sortedAppointment.level = 0
-			if appointments.size() == 0:
-				appointments.append(sortedAppointment)
-			else:
-				appointments.sort_custom(sortAppointments, "sortByLevel")
-				for appointment in appointments:
-					if sortedAppointment.level == appointment.level:
-						var start = sortedAppointment.start
-						var end = sortedAppointment.end
-						if (start >= appointment.start and start <= appointment.end) or (end >= appointment.start and end <= appointment.end):
-							sortedAppointment.level += 1
-							
-				appointments.append(sortedAppointment)
+		sortedAppointment.level = 0
+		if appointments.size() == 0:
+			appointments.append(sortedAppointment)
+		else:
+			appointments.sort_custom(sortAppointments, "sortByLevel")
+			for appointment in appointments:
+				if sortedAppointment.level == appointment.level:
+					var start = sortedAppointment.start
+					var end = sortedAppointment.end
+					if (start >= appointment.start and start <= appointment.end) or (end >= appointment.start and end <= appointment.end):
+						sortedAppointment.level += 1
+						
+			appointments.append(sortedAppointment)
 				
 	for i in 7:
 		var newDay = dayScene.instance()
-		newDay.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		newDay.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		var date = (startDate + 7 + i - 1) #startdate is week number within month times 7 minus the weekday, e.g. 0 for sunday. It's minus 1 because you start on sunday, not monday
 		if date > daysInMonth:
 			date -= daysInMonth
@@ -45,6 +48,7 @@ func _ready():
 				invertColors()
 				inverted = true
 		newDay.setDate(date as String)
+		newDay.setMonth(month + inverted as int)
 		newDay.setColor(color[0] as Color)
 		newDay.rect_min_size = Vector2(1100, 933)
 		var sortedAppointments = Array()
@@ -62,13 +66,17 @@ func _ready():
 		newDay.lastDay = false
 		if i == 6:
 			newDay.lastDay = true
+		newDay.connect("updateDayHover", self, "updateDayHover")
 		dayList.append(newDay)
 		
 		var newDayHQ = daySceneHQ.instance()
-		newDayHQ.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
+		newDayHQ.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		newDayHQ.rect_min_size = Vector2(1100, 933)
 		newDayHQ.setColor(color[0] as Color)
 		newDayHQ.addAppointmentList(sortedAppointments)
+		newDayHQ.setDate(date)
+		newDayHQ.setMonth(month + inverted as int)
+		newDayHQ.connect("updateDayHover", self, "updateDayHover")
 		highQualityDayList.append(newDayHQ)
 		
 		addDays()
@@ -138,3 +146,10 @@ func addDays():
 static func delete_children(node):
 	for n in node.get_children():
 		node.remove_child(n)
+		
+func setMonth(value):
+	month = value
+		
+func updateDayHover(value):
+	emit_signal("updateWeekHover", value)
+	pass

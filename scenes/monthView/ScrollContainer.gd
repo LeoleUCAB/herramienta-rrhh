@@ -6,6 +6,12 @@ export var loadingPlaceholderScene: PackedScene
 
 var newMonthList: Array
 var placeholderList: Array
+var hoverValue = {
+	"year": 1951,
+	"month": 1
+}
+
+signal updateHover(hoverValue)
 
 var highQuality = false
 
@@ -50,6 +56,8 @@ func _ready():
 			newMonth.setDaysInMonth(daysInMonth)
 			newMonth.setWeeks(maxWeek)
 			newMonth.setMonth(j)
+			newMonth.setYear(newMonthDate.year)
+			newMonth.connect("updateMonthHover", self, "updateMonthHover")
 			newMonth.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			newMonth.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 			newYear.append(newMonth)
@@ -139,3 +147,9 @@ func _on_highQualityToggle(value):
 	
 func goToDate(dateValue): #{ year: int, month: int }
 	set_v_scroll(ITEM_HEIGHT*((dateValue.year-1951)*AVERAGE_WEEKS_IN_YEAR + (dateValue.month-1)*AVERAGE_WEEKS_IN_MONTH))
+	
+func updateMonthHover(value):
+	if hoverValue.year != value.year or hoverValue.month != value.month:
+		hoverValue.year = value.year
+		hoverValue.month = value.month
+		emit_signal("updateHover", hoverValue)

@@ -3,6 +3,8 @@ extends Control
 var appointmentList: Array = Array()
 var maxColumns = 1
 var color: Color = Color.white
+var date: int = 1 setget setDate
+var month: int = 1 setget setMonth
 
 onready var hours = [
 	$Hours/AllDay/Content/GridContainer,
@@ -25,6 +27,8 @@ const GRID_HEIGHT = 67
 const GRID_MARGIN = 5
 const GRID_H_SEPARATION = 4
 const HOUR_HEIGHT = 72
+
+signal updateDayHover(month)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -255,3 +259,13 @@ class sortAppointments:
 		if a.level == b.level:
 			return sortByStartDate(a, b)
 		return false
+
+func setDate(value):
+	date = value
+	
+func setMonth(value):
+	month = value
+
+func _on_mouse_entered():
+	emit_signal("updateDayHover", month)
+	pass # Replace with function body.
