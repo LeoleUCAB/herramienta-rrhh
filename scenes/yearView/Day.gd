@@ -6,6 +6,8 @@ onready var SAG = $ShortAppointmentGrid
 
 var dayNumber setget setDayNumber
 
+signal dayClick(day)
+
 func _ready():
 	generateRandomAppointments()
 	pass
@@ -38,3 +40,6 @@ func generateRandomAppointments():
 		newAppointment.color = colorList[colorList.size()-i-1]
 		SAG.add_child(newAppointment)
 		
+func _on_Day_gui_input(event):
+	if event.get_class() == "InputEventMouseButton" and event.pressed == true:
+		emit_signal("dayClick", dayNumber)

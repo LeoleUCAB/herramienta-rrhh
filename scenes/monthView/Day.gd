@@ -18,6 +18,7 @@ var appointmentList: Array = Array()
 var lastDay: bool = false
 
 signal updateDayHover(dayValue)
+signal updateDayClick(clickValue)
 
 func _ready():
 	if date.length() == 1:
@@ -53,4 +54,13 @@ func addPlaceholderAppointment(value):
 
 func _on_mouse_entered():
 	emit_signal("updateDayHover", month)
+	pass # Replace with function body.
+
+func _on_Day_gui_input(event):
+	if event.get_class() == "InputEventMouseButton" and event.pressed == true:
+		var currentDayClick = {
+			"month": month,
+			"day": date as int
+		}
+		emit_signal("updateDayClick", currentDayClick)
 	pass # Replace with function body.

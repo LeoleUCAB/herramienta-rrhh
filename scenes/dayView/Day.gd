@@ -29,6 +29,7 @@ const GRID_H_SEPARATION = 4
 const HOUR_HEIGHT = 72
 
 signal updateDayHover(month)
+signal updateDayClick(clickValue)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -268,4 +269,14 @@ func setMonth(value):
 
 func _on_mouse_entered():
 	emit_signal("updateDayHover", month)
+	pass # Replace with function body.
+
+
+func _on_Control_gui_input(event):
+	if event.get_class() == "InputEventMouseButton" and event.pressed == true:
+		var currentDayClick = {
+			"month": month,
+			"day": date
+		}
+		emit_signal("updateDayClick", currentDayClick)
 	pass # Replace with function body.

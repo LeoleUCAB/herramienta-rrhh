@@ -83,3 +83,5 @@ __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+
+[connection signal="gui_input" from="." to="." method="_on_Day_gui_input"]

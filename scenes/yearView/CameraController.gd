@@ -66,7 +66,7 @@ func _update_zoom(incr, zoom_anchor):
 	var ratio = 1-_current_zoom_level/old_zoom
 	set_offset(get_offset() + zoom_center*ratio)
 	if _current_zoom_level <= 8:
-		_current_zoom_level = 8.5
+		_current_zoom_level = 13
 		emit_signal("yearZoomed", _current_zoom_level)
 	set_zoom(Vector2(_current_zoom_level, _current_zoom_level))
 

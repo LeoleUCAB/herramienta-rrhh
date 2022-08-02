@@ -11,7 +11,14 @@ var hoverValue = {
 	"month": -1
 }
 
+var clickValue = {
+	"year": year,
+	"month": -1,
+	"day": -1
+}
+
 signal updateYearHover(hoverValue)
+signal updateYearClick(clickValue)
 
 func _ready():
 	yearNumber.text = year as String
@@ -34,6 +41,7 @@ func _ready():
 		}
 		newMonth.init(initDict)
 		newMonth.connect("monthHover", self, "updateMonthHover")
+		newMonth.connect("monthClick", self, "updateMonthClick")
 		grid.add_child(newMonth)
 	pass
 	
@@ -65,3 +73,9 @@ func updateMonthHover(month):
 		hoverValue.year = year
 		emit_signal("updateYearHover", hoverValue)
 
+func updateMonthClick(currentClickValue):
+	if clickValue.day != currentClickValue.day:
+		clickValue.day = currentClickValue.day
+		clickValue.month = currentClickValue.month
+		clickValue.year = year
+		emit_signal("updateYearClick", clickValue)

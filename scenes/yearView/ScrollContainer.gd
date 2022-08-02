@@ -4,14 +4,21 @@ onready var vBoxContainer = $VBoxContainer
 export var yearScene: PackedScene
 export var loadingPlaceholderScene: PackedScene
 
+var appointmentList = []
 var newYearList: Array
 var placeholderList: Array
 var hoverValue = {
 	"year": 1900,
 	"month": -1
 }
+var clickValue = {
+	"year": 1900,
+	"month": -1,
+	"day": -1
+}
 
 signal updateHover(hoverValue)
+signal updateClick(clickValue)
 
 const RANGE = 5
 const MAX_SIZE = 100
@@ -33,6 +40,7 @@ func _ready():
 		newYear.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
 		newYear.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		newYear.connect("updateYearHover", self, "updateYearHover")
+		newYear.connect("updateYearClick", self, "updateYearClick")
 		newYearList.append(newYear)
 	
 	for item in placeholderList:
@@ -58,7 +66,6 @@ func _on_scroll_ended():
 	delete_children(vBoxContainer)
 	for item in scrollList:
 		vBoxContainer.add_child(item)
-	prints("ended", lowerLimit, higherLimit, currentVPos / ITEM_HEIGHT)
 	pass
 	
 static func delete_children(node):
@@ -78,6 +85,13 @@ func updateYearHover(value):
 		hoverValue.year = value.year
 		hoverValue.month = value.month
 		emit_signal("updateHover", hoverValue)
+		
+func updateYearClick(value):
+	if value.year != clickValue.year or value.month != clickValue.month or value.day != clickValue.day:
+		clickValue.year = value.year
+		clickValue.month = value.month
+		clickValue.day = value.day
+		emit_signal("updateClick", clickValue)
 		
 func goToDate(date):
 	set_v_scroll(ITEM_HEIGHT*(date.year-1950) - YEAR_LABEL_HEIGHT / 7 * 4 + ITEM_MONTH_HEIGHT * floor((date.month - 1) / 4))

@@ -19,6 +19,7 @@ var year: int = 1950 setget setYear
 const monthArray = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"]
 
 signal updateMonthHover(hoverValue)
+signal updateMonthClick(clickValue)
 
 func _ready():
 	generateRandomAppointments()
@@ -33,6 +34,7 @@ func _ready():
 		newWeek.setHighQuality(highQuality)
 		newWeek.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		newWeek.connect("updateWeekHover", self, "updateWeekHover")
+		newWeek.connect("updateWeekClick", self, "updateWeekClick")
 		var startDate = i * 7 - weekStart + 1
 		var appointmentRange: Vector2 = Vector2(startDate - 1 + 7, startDate - 1 + 14)
 		newWeek.setStartDate(startDate)
@@ -170,3 +172,11 @@ func updateWeekHover(value):
 	}
 	emit_signal("updateMonthHover", hoverValue)
 	pass
+
+func updateWeekClick(value):
+	var clickValue = {
+		"year": year + 1,
+		"month": value.month,
+		"day": value.day
+	}
+	emit_signal("updateMonthClick", clickValue)

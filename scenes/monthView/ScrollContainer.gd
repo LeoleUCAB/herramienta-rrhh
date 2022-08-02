@@ -10,8 +10,14 @@ var hoverValue = {
 	"year": 1951,
 	"month": 1
 }
+var clickValue = {
+	"year": 1951,
+	"month": -1,
+	"day": -1
+}
 
 signal updateHover(hoverValue)
+signal updateClick(clickValue)
 
 var highQuality = false
 
@@ -58,6 +64,7 @@ func _ready():
 			newMonth.setMonth(j)
 			newMonth.setYear(newMonthDate.year)
 			newMonth.connect("updateMonthHover", self, "updateMonthHover")
+			newMonth.connect("updateMonthClick", self, "updateMonthClick")
 			newMonth.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT * (maxWeek))
 			newMonth.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 			newYear.append(newMonth)
@@ -153,3 +160,11 @@ func updateMonthHover(value):
 		hoverValue.year = value.year
 		hoverValue.month = value.month
 		emit_signal("updateHover", hoverValue)
+
+func updateMonthClick(value):
+	if clickValue.year != value.year or clickValue.month != value.month or clickValue.day != value.day:
+		clickValue.year = value.year
+		clickValue.month = value.month
+		clickValue.day = value.day
+		emit_signal("updateClick", clickValue)
+	

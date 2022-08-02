@@ -795,4 +795,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[connection signal="gui_input" from="." to="." method="_on_Control_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

@@ -12,6 +12,7 @@ onready var grid = $DayGrid
 onready var monthName = $MonthName
 
 signal monthHover(month)
+signal monthClick(currentClickDate)
 
 func _ready():
 	for i in range(daysInMonth + weekStart):
@@ -19,6 +20,7 @@ func _ready():
 		newDay.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		grid.add_child(newDay)
 		newDay.dayNumber = i+1-weekStart
+		newDay.connect("dayClick", self, "updateDayClick")
 		if(i < weekStart):
 			newDay.modulate = Color(1, 1, 1, 0)
 		monthName.text = monthArray[month-1]
@@ -30,6 +32,12 @@ func init(param: Dictionary): #{"year": int, "month": int, "weekStart": int, "da
 	daysInMonth = param.daysInMonth
 	pass
 
-
 func _on_Month_mouse_entered():
 	emit_signal("monthHover", month)
+
+func updateDayClick(day):
+	var currentClickDate = {
+		"month": month,
+		"day": day
+	}
+	emit_signal("monthClick", currentClickDate)

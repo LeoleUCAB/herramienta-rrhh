@@ -12,6 +12,7 @@ var month = 1 setget setMonth
 onready var grid = $GridContainer
 
 signal updateWeekHover(month)
+signal updateWeekClick(clickValue)
 
 export var dayScene: PackedScene
 export var daySceneHQ: PackedScene
@@ -67,6 +68,7 @@ func _ready():
 		if i == 6:
 			newDay.lastDay = true
 		newDay.connect("updateDayHover", self, "updateDayHover")
+		newDay.connect("updateDayClick", self, "updateDayClick")
 		dayList.append(newDay)
 		
 		var newDayHQ = daySceneHQ.instance()
@@ -77,6 +79,7 @@ func _ready():
 		newDayHQ.setDate(date)
 		newDayHQ.setMonth(month + inverted as int)
 		newDayHQ.connect("updateDayHover", self, "updateDayHover")
+		newDayHQ.connect("updateDayClick", self, "updateDayClick")
 		highQualityDayList.append(newDayHQ)
 		
 		addDays()
@@ -152,4 +155,8 @@ func setMonth(value):
 		
 func updateDayHover(value):
 	emit_signal("updateWeekHover", value)
+	pass
+	
+func updateDayClick(value):
+	emit_signal("updateWeekClick", value)
 	pass
