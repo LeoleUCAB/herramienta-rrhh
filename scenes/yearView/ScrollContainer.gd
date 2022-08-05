@@ -4,6 +4,7 @@ onready var vBoxContainer = $VBoxContainer
 export var yearScene: PackedScene
 export var loadingPlaceholderScene: PackedScene
 
+var pagination = {} setget setPagination
 var appointmentList = []
 var newYearList: Array
 var placeholderList: Array
@@ -29,14 +30,15 @@ const YEAR_LABEL_HEIGHT = 2483
 
 func _ready():
 	for i in range(MAX_SIZE):
+		var year = 1950 + i
 		var placeholder = loadingPlaceholderScene.instance()
-		placeholder.setYear(1950 + i)
+		placeholder.setYear(year)
 		placeholder.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
 		placeholder.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		placeholderList.append(placeholder)
 		
 		var newYear = yearScene.instance()
-		newYear.setYear(1950 + i)
+		newYear.setYear(year)
 		newYear.rect_min_size = Vector2(ITEM_WIDTH, ITEM_HEIGHT)
 		newYear.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		newYear.connect("updateYearHover", self, "updateYearHover")
@@ -96,3 +98,20 @@ func updateYearClick(value):
 func goToDate(date):
 	set_v_scroll(ITEM_HEIGHT*(date.year-1950) - YEAR_LABEL_HEIGHT / 7 * 4 + ITEM_MONTH_HEIGHT * floor((date.month - 1) / 4))
 	pass
+
+func setPagination(value):
+	pagination = value
+	
+	var yearPagination = {}
+	for yearItem in newYearList:
+		var year = yearItem.year
+		if pagination.has(year):
+			for page in pagination[year]:
+				yearItem.appointmentList.append(appointmentList[page])
+				var index = yearItem.appointmentList.size() - 1
+				for month in range(appointmentList[page].start.month(), appointmentList[page].end.month() + 1):
+					if !yearPagination.has(month):
+						yearPagination[month] = [index]
+						continue
+					yearPagination[month].append(index)
+			yearItem.pagination = yearPagination

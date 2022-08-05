@@ -6,6 +6,9 @@ onready var yearNumber = $YearNumber
 export var monthScene: PackedScene
 
 var year: int = 1900 setget setYear
+var monthList = []
+var appointmentList = []
+var pagination = {}
 var hoverValue = {
 	"year": year,
 	"month": -1
@@ -42,7 +45,9 @@ func _ready():
 		newMonth.init(initDict)
 		newMonth.connect("monthHover", self, "updateMonthHover")
 		newMonth.connect("monthClick", self, "updateMonthClick")
+		monthList.append(newMonth)
 		grid.add_child(newMonth)
+	setPagination()
 	pass
 	
 func getDaysInMonth(month):
@@ -79,3 +84,18 @@ func updateMonthClick(currentClickValue):
 		clickValue.month = currentClickValue.month
 		clickValue.year = year
 		emit_signal("updateYearClick", clickValue)
+		
+func setPagination():
+	for monthItem in monthList:
+		var monthPagination = {}
+		var month = monthItem.month
+		if pagination.has(month):
+			for page in pagination[month]:
+				monthItem.appointmentList.append(appointmentList[page])
+				var index = monthItem.appointmentList.size() - 1
+				for day in range(appointmentList[page].start.day(), appointmentList[page].end.day() + 1):
+					if !monthPagination.has(day):
+						monthPagination[day] = [index]
+						continue
+					monthPagination[day].append(index)
+			monthItem.pagination = monthPagination

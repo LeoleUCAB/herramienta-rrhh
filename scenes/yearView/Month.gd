@@ -2,6 +2,9 @@ extends Control
 
 export var dayScene: PackedScene
 
+var dayList = []
+var appointmentList = []
+var pagination = {} setget setPagination
 var year = 2022
 var month = 1
 var weekStart = 1
@@ -24,6 +27,7 @@ func _ready():
 		if(i < weekStart):
 			newDay.modulate = Color(1, 1, 1, 0)
 		monthName.text = monthArray[month-1]
+		dayList.append(newDay)
 
 func init(param: Dictionary): #{"year": int, "month": int, "weekStart": int, "daysInMonth": int}
 	year = param.year
@@ -41,3 +45,16 @@ func updateDayClick(day):
 		"day": day
 	}
 	emit_signal("monthClick", currentClickDate)
+
+func setPagination(value):
+	pagination = value
+	setAppointments()
+
+func setAppointments():
+	for dayItem in dayList:
+		var dayAppointments = []
+		var day = dayItem.dayNumber
+		if pagination.has(day):
+			for page in pagination[day]:
+				dayAppointments.append(appointmentList[page])
+			dayItem.appointmentList = dayAppointments
