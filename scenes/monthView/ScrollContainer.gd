@@ -15,6 +15,8 @@ var clickValue = {
 	"month": -1,
 	"day": -1
 }
+var appointmentList = []
+var pagination = {} setget setPagination
 
 signal updateHover(hoverValue)
 signal updateClick(clickValue)
@@ -168,3 +170,26 @@ func updateMonthClick(value):
 		clickValue.day = value.day
 		emit_signal("updateClick", clickValue)
 	
+func setPagination(value):
+	pagination = value
+	for i in range(newMonthList.size()):
+		var year = 1951 + i
+		var yearItem = newMonthList[i]
+		if pagination.has(year):
+			var yearAppointments = []
+			var monthPagination = {}
+			for index in pagination[year]:
+				var month = appointmentList[index].start.month()
+				yearAppointments.append(appointmentList[index])
+				if !monthPagination.has(month):
+					monthPagination[month] = [yearAppointments.size() - 1]
+					continue
+				monthPagination[month].append(yearAppointments.size() - 1)
+			for monthItem in yearItem:
+				print(monthItem.year)
+				var month = monthItem.month + 1
+				if monthPagination.has(month):
+					var monthAppointments = []
+					for index in monthPagination[month]:
+						monthAppointments.append(yearAppointments[index])
+					monthItem.appointmentList = monthAppointments

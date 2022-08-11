@@ -51,11 +51,11 @@ func _ready():
 		else:
 			for appointment in appointmentList:
 				if !appointment.isItDaylong:
-					if i == 1 && appointment.start < 8:
+					if i == 1 && appointment.hour.start < 8:
 						hourAppointments.append(appointment)
-					elif i == hours.size() - 1 && appointment.end > 17:
+					elif i == hours.size() - 1 && appointment.hour.end > 17:
 						hourAppointments.append(appointment)
-					elif currentTime >= appointment.start && currentTime <= appointment.end:
+					elif currentTime >= appointment.hour.start && currentTime <= appointment.hour.end:
 						hourAppointments.append(appointment)
 		if !hourAppointments.empty():
 			addAppointment(hour, hourAppointments, currentTime)
@@ -70,8 +70,8 @@ func setWeight():
 		if appointment.isItDaylong:
 			weight = 1
 		else:
-			var start = appointment.start
-			var end = appointment.end
+			var start = appointment.hour.start
+			var end = appointment.hour.end
 			if start < 8:
 				weight += 1
 				start = 8
@@ -101,9 +101,9 @@ func setLevel():
 			sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
 			for sortedAppointment in sortedAppointments:
 				if appointment.level == sortedAppointment.level:
-					var start = sortedAppointment.start
-					var end = sortedAppointment.end
-					if (appointment.start >= start and appointment.start <= end) or (appointment.end >= start and appointment.end <= end):
+					var start = sortedAppointment.hour.start
+					var end = sortedAppointment.hour.end
+					if (appointment.hour.start >= start and appointment.hour.start <= end) or (appointment.hour.end >= start and appointment.hour.end <= end):
 						appointment.level += 1
 						if appointment.level > maxLevel:
 							maxLevel = appointment.level
@@ -130,7 +130,7 @@ func addAppointment(hour, appointments, currentTime):
 			currentLevel = appointment.level + 1
 		var newAppointment = ColorRect.new()
 		newAppointment.color = appointment.color
-		if currentTime == appointment.end:
+		if currentTime == appointment.hour.end:
 			pass #LMAO IT DOESN'T WORK I SCREWED UP
 		newAppointment.rect_min_size = rectSize
 		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)

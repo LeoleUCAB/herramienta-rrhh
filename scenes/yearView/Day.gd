@@ -39,21 +39,10 @@ func _on_Day_gui_input(event):
 func setAppointments(value):
 	appointmentList = value
 	
-	var rng = RandomNumberGenerator.new()
-	rng.randomize()
-	var colorList = [
-		Color.red,
-		Color.blue,
-		Color.yellow,
-		Color.green,
-		Color.orange,
-		Color.purple
-	]
-	
 	for appointment in appointmentList:
 		var newAppointment = ColorRect.new()
 		newAppointment.size_flags_vertical = SIZE_EXPAND + SIZE_SHRINK_CENTER
-		newAppointment.color = colorList[appointment.user.id - 1]
+		newAppointment.color = appointment.color
 		if appointment.isItDaylong:
 			newAppointment.rect_min_size = Vector2(168, 84)
 			LAG.add_child(newAppointment)

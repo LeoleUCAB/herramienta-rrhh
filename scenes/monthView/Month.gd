@@ -11,7 +11,7 @@ var weekStart: int = 0 setget setWeekStart
 var weeks: int = 4 setget setWeeks
 var daysInMonth: int = 30 setget setDaysInMonth
 var month: int = 0 setget setMonth #January is 0
-var appointmentList: Array = Array()
+var appointmentList: Array = Array() setget setAppointments
 var highQuality = false setget setHighQuality
 var weekList: Array
 var year: int = 1950 setget setYear
@@ -22,7 +22,6 @@ signal updateMonthHover(hoverValue)
 signal updateMonthClick(clickValue)
 
 func _ready():
-	generateRandomAppointments()
 	var invertedColors: bool = false
 	if month % 2:
 		monthRect.color = Color("bfbfbf")
@@ -41,11 +40,11 @@ func _ready():
 		if invertedColors:
 			newWeek.invertColors()
 		for appointment in appointmentList:
-			if appointment.start >= appointmentRange[0] and appointment.start <= appointmentRange[1]: # starts this week
+			if appointment.start.day() >= appointmentRange[0] and appointment.start.day() <= appointmentRange[1]: # starts this week
 				newWeek.addAppointment(appointment)
-			elif appointment.end >= appointmentRange[0] and appointment.end <= appointmentRange[1]: # started in another week but ends this week
+			elif appointment.end.day() >= appointmentRange[0] and appointment.end.day() <= appointmentRange[1]: # started in another week but ends this week
 				newWeek.addAppointment(appointment)
-			elif appointment.start <= appointmentRange[0] and appointment.end >= appointmentRange[1]: # started in another week and ends later still
+			elif appointment.start.day() <= appointmentRange[0] and appointment.end.day() >= appointmentRange[1]: # started in another week and ends later still
 				newWeek.addAppointment(appointment)
 		weekList.append(newWeek)
 		
@@ -180,3 +179,6 @@ func updateWeekClick(value):
 		"day": value.day
 	}
 	emit_signal("updateMonthClick", clickValue)
+	
+func setAppointments(value):
+	appointmentList = value

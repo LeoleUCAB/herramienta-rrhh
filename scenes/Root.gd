@@ -35,6 +35,8 @@ func _ready():
 	monthCamera.connect("monthZoomed", self, "changeToYear")
 	monthRoulette.connect("updateHover", self, "updateHover")
 	monthRoulette.connect("updateClick", dateFinder, "updateClick")
+	monthRoulette.appointmentList = appointmentList
+	monthRoulette.pagination = pagination
 	
 	dateFinder.connect("goToDate", self, "goToDate")
 	currentCam = YEAR_CAM
@@ -99,6 +101,14 @@ func generateRandomAppointments():
 			"id": 6
 		}
 	]
+	var colorList = [
+		Color.red,
+		Color.blue,
+		Color.yellow,
+		Color.green,
+		Color.orange,
+		Color.purple
+	]
 	for i in 20:
 		rng.randomize()
 		var isItDayLong: bool = rng.randi() % 2
@@ -132,6 +142,7 @@ func generateRandomAppointments():
 			hour.end = rng.randi_range(hour.start, 24)
 			
 		var user = userList[rng.randi_range(0, 4)]
+		var color = colorList[user.id - 1]
 		
 		
 		var newAppointment = {
@@ -139,6 +150,7 @@ func generateRandomAppointments():
 			"end": end,
 			"hour": hour,
 			"user": user,
+			"color": color,
 			"weight": null,
 			"level": null,
 			"isItDaylong": isItDayLong

@@ -54,7 +54,7 @@ func _ready():
 		newDay.rect_min_size = Vector2(1100, 933)
 		var sortedAppointments = Array()
 		for appointment in appointments: # appointment: { start: int, end: int, color: Color, level: int, weight: int }
-			if appointment.start <= date and appointment.end >= date:
+			if appointment.start.day() <= date and appointment.end.day() >= date:
 				sortedAppointments.append(appointment)
 		sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
 		var currentLevel = 0
@@ -105,10 +105,10 @@ func setWeight(appointments, startDate):
 	for appointment in appointments:
 		var dateRange = Vector2(startDate, startDate + 7 - 1)
 		if appointment.isItDaylong:
-			if dateRange[0] < appointment.start: #why did i write this in the most confusing logic i could muster?
-				dateRange[0] = appointment.start
-			if dateRange[1] > appointment.end:
-				dateRange[1] = appointment.end
+			if dateRange[0] < appointment.start.day(): #why did i write this in the most confusing logic i could muster?
+				dateRange[0] = appointment.start.day()
+			if dateRange[1] > appointment.end.day():
+				dateRange[1] = appointment.end.day()
 			var weight = dateRange[1] - dateRange[0] + 1
 			if weight > 7: #i literally cannot tell if this is necessary and i cba to check
 				weight = 7
@@ -118,7 +118,7 @@ func setWeight(appointments, startDate):
 
 class sortAppointments:
 	static func sortByStartDate(a, b):
-		if a.start <= b.start:
+		if a.start.day() <= b.start.day():
 			return true
 		return false
 	
