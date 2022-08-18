@@ -57,4 +57,4 @@ func setAppointments():
 		if pagination.has(day):
 			for page in pagination[day]:
 				dayAppointments.append(appointmentList[page])
-			dayItem.appointmentList = dayAppointments
+		dayItem.appointmentList = dayAppointments

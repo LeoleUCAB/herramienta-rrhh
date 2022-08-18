@@ -8,9 +8,13 @@ onready var monthRoulette = $MonthRoulette/ScrollContainer
 
 onready var dateFinder = $HUD/MainBanner/DateFinder
 
+onready var filter = $HUD/FilterMenu
+
 var pagination = {}
 var appointmentList = []
 var currentCam: int
+var userList = []
+var filterDict = {}
 
 var currentDate = {
 	"year": 1951,
@@ -37,6 +41,9 @@ func _ready():
 	monthRoulette.connect("updateClick", dateFinder, "updateClick")
 	monthRoulette.appointmentList = appointmentList
 	monthRoulette.pagination = pagination
+	
+	filter.connect("checkBoxToggle", self, "checkBoxToggle")
+	filter.userList = userList
 	
 	dateFinder.connect("goToDate", self, "goToDate")
 	currentCam = YEAR_CAM
@@ -75,32 +82,6 @@ func goToDate(date):
 func generateRandomAppointments():
 	var randomAppointments = []
 	var rng = RandomNumberGenerator.new()
-	var userList = [
-		{
-			"name": "Alan",
-			"id": 1,
-		},
-		{
-			"name": "Bea",
-			"id": 2,
-		},
-		{
-			"name": "Chris",
-			"id": 3,
-		},
-		{
-			"name": "Dylan",
-			"id": 4,
-		},
-		{
-			"name": "Earl",
-			"id": 5,
-		},
-		{
-			"name": "Frank",
-			"id": 6
-		}
-	]
 	var colorList = [
 		Color.red,
 		Color.blue,
@@ -109,6 +90,41 @@ func generateRandomAppointments():
 		Color.orange,
 		Color.purple
 	]
+	var defaultUserList = [
+		{
+			"name": "Alan",
+			"id": 1,
+			"color": colorList[0]
+		},
+		{
+			"name": "Bea",
+			"id": 2,
+			"color": colorList[1]
+		},
+		{
+			"name": "Chris",
+			"id": 3,
+			"color": colorList[2]
+		},
+		{
+			"name": "Dylan",
+			"id": 4,
+			"color": colorList[3]
+		},
+		{
+			"name": "Earl",
+			"id": 5,
+			"color": colorList[4]
+		},
+		{
+			"name": "Frank",
+			"id": 6,
+			"color": colorList[5]
+		}
+	]
+	userList = defaultUserList
+	for userItem in defaultUserList:
+		filterDict[userItem.id] = true
 	for i in 20:
 		rng.randomize()
 		var isItDayLong: bool = rng.randi() % 2
@@ -141,7 +157,7 @@ func generateRandomAppointments():
 			hour.start = rng.randi_range(0, 24)
 			hour.end = rng.randi_range(hour.start, 24)
 			
-		var user = userList[rng.randi_range(0, 4)]
+		var user = defaultUserList[rng.randi_range(0, 4)]
 		var color = colorList[user.id - 1]
 		
 		
@@ -180,8 +196,11 @@ func getDaysInMonth(month, year):
 	return daysInMonth
 	
 func paginate(list):
+	pagination = {}
 	for index in range(list.size()):
 		var item = list[index]
+		if !filterDict[item.user.id]:
+			continue
 		var start = item.start.year()
 		var end = item.end.year()
 		for year in range(start, end + 1):
@@ -207,3 +226,8 @@ func printDates(list):
 		var day = item.start.day() as String if item.start.day() >= 10 else "0" + item.start.day() as String
 		var month = item.start.month() as String if item.start.month() >= 10 else "0" + item.start.month() as String
 		print(day + "/" + month + "/" + item.start.year() as String)
+		
+func checkBoxToggle(toggleValue):
+	filterDict[toggleValue.id] = toggleValue.state
+	paginate(appointmentList)
+	yearRoulette.setPagination(pagination, false)

@@ -186,7 +186,6 @@ func setPagination(value):
 					continue
 				monthPagination[month].append(yearAppointments.size() - 1)
 			for monthItem in yearItem:
-				print(monthItem.year)
 				var month = monthItem.month + 1
 				if monthPagination.has(month):
 					var monthAppointments = []

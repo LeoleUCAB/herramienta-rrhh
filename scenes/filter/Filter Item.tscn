@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://res/fonts/fredoka/fredokaDynamic32.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Filter Item.gd" type="Script" id=2]
+
+[node name="Filter Item" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="."]
+margin_left = 44.0
+margin_top = 1.0
+margin_right = 174.0
+margin_bottom = 80.0
+rect_scale = Vector2( 0.33, 0.33 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Test"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CheckBox" type="CheckBox" parent="."]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 26.0
+margin_bottom = 26.0
+pressed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 25.0
+margin_top = 6.0
+margin_right = 41.0
+margin_bottom = 22.0
+
+[connection signal="toggled" from="CheckBox" to="." method="_on_CheckBox_toggled"]

@@ -34,7 +34,7 @@ func _ready():
 		newAppointment.rect_min_size = rectSize
 		newAppointment.color = appointmentItem.color
 		grid.add_child(newAppointment)
-		prints("appointment at", appointmentItem.start.day(), "/", appointmentItem.start.month(), "/", appointmentItem.start.year())
+#		prints("appointment at", appointmentItem.start.day(), "/", appointmentItem.start.month(), "/", appointmentItem.start.year())
 	pass
 	
 func setDate(value):

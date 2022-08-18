@@ -99,7 +99,7 @@ func goToDate(date):
 	set_v_scroll(ITEM_HEIGHT*(date.year-1950) - YEAR_LABEL_HEIGHT / 7 * 4 + ITEM_MONTH_HEIGHT * floor((date.month - 1) / 4))
 	pass
 
-func setPagination(value):
+func setPagination(value, default=true):
 	pagination = value
 	
 	var yearPagination = {}
@@ -115,3 +115,5 @@ func setPagination(value):
 						continue
 					yearPagination[month].append(index)
 			yearItem.pagination = yearPagination
+		if !default:
+			yearItem.setPagination()

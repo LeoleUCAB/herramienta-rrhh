@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/yearView/YearRoulette.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/monthView/MonthRoulette.tscn" type="PackedScene" id=2]
@@ -6,8 +6,9 @@
 [ext_resource path="res://res/fonts/fredoka/fredokaDynamic32.tres" type="DynamicFont" id=4]
 [ext_resource path="res://addons/calendar_button/scripts/calendar_script.gd" type="Script" id=5]
 [ext_resource path="res://scenes/DateFinder.gd" type="Script" id=6]
-[ext_resource path="res://scenes/FilterMenu.gd" type="Script" id=7]
+[ext_resource path="res://scenes/filter/FilterMenu.gd" type="Script" id=7]
 [ext_resource path="res://res/img/383135_filter_icon.png" type="Texture" id=8]
+[ext_resource path="res://scenes/filter/Filter Item.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Image" id=5]
 data = {
@@ -119,7 +120,40 @@ margin_bottom = 719.0
 color = Color( 0.752941, 0.709804, 0.670588, 1 )
 script = ExtResource( 7 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
+}
+filterItem = ExtResource( 9 )
+
+[node name="FilterLabel" type="Label" parent="HUD/FilterMenu"]
+margin_left = 9.0
+margin_top = 4.0
+margin_right = 194.0
+margin_bottom = 83.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 4 )
+text = "Filtros"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="HUD/FilterMenu"]
+points = PoolVector2Array( 11, 44, 244, 44 )
+width = 3.0
+default_color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="FilterGrid" type="GridContainer" parent="HUD/FilterMenu"]
+margin_left = 12.0
+margin_top = 52.0
+margin_right = 244.0
+margin_bottom = 92.0
+__meta__ = {
+"_edit_lock_": true
 }
 
 [connection signal="pressed" from="HUD/MainBanner/FilterButton" to="HUD/FilterMenu" method="_on_FilterButton_pressed"]
