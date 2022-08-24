@@ -231,3 +231,4 @@ func checkBoxToggle(toggleValue):
 	filterDict[toggleValue.id] = toggleValue.state
 	paginate(appointmentList)
 	yearRoulette.setPagination(pagination, false)
+	monthRoulette.setPagination(pagination)

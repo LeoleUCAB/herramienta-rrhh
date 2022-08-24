@@ -35,17 +35,10 @@ func _ready():
 		newWeek.connect("updateWeekHover", self, "updateWeekHover")
 		newWeek.connect("updateWeekClick", self, "updateWeekClick")
 		var startDate = i * 7 - weekStart + 1
-		var appointmentRange: Vector2 = Vector2(startDate - 1 + 7, startDate - 1 + 14)
 		newWeek.setStartDate(startDate)
 		if invertedColors:
 			newWeek.invertColors()
-		for appointment in appointmentList:
-			if appointment.start.day() >= appointmentRange[0] and appointment.start.day() <= appointmentRange[1]: # starts this week
-				newWeek.addAppointment(appointment)
-			elif appointment.end.day() >= appointmentRange[0] and appointment.end.day() <= appointmentRange[1]: # started in another week but ends this week
-				newWeek.addAppointment(appointment)
-			elif appointment.start.day() <= appointmentRange[0] and appointment.end.day() >= appointmentRange[1]: # started in another week and ends later still
-				newWeek.addAppointment(appointment)
+		setWeekAppointments(newWeek)
 		weekList.append(newWeek)
 		
 	for week in weekList:
@@ -182,3 +175,18 @@ func updateWeekClick(value):
 	
 func setAppointments(value):
 	appointmentList = value
+	for week in weekList:
+		setWeekAppointments(week)
+	
+func setWeekAppointments(week):
+	var startDate = week.startDate
+	var appointmentRange: Vector2 = Vector2(startDate - 1 + 7, startDate - 1 + 14)
+	var weekAppointments = []
+	for appointment in appointmentList:
+		if appointment.start.day() >= appointmentRange[0] and appointment.start.day() <= appointmentRange[1]: # starts this week
+			weekAppointments.append(appointment)
+		elif appointment.end.day() >= appointmentRange[0] and appointment.end.day() <= appointmentRange[1]: # started in another week but ends this week
+			weekAppointments.append(appointment)
+		elif appointment.start.day() <= appointmentRange[0] and appointment.end.day() >= appointmentRange[1]: # started in another week and ends later still
+			weekAppointments.append(appointment)
+	week.addAppointments(weekAppointments)

@@ -20,24 +20,7 @@ export var daySceneHQ: PackedScene
 
 func _ready():
 	var inverted: bool = false
-	setWeight(appointmentList, startDate + 7 - 1)
-	appointmentList.sort_custom(sortAppointments, "sortByWeight")
-	
-	var appointments = Array()
-	for sortedAppointment in appointmentList:
-		sortedAppointment.level = 0
-		if appointments.size() == 0:
-			appointments.append(sortedAppointment)
-		else:
-			appointments.sort_custom(sortAppointments, "sortByLevel")
-			for appointment in appointments:
-				if sortedAppointment.level == appointment.level:
-					var start = sortedAppointment.start
-					var end = sortedAppointment.end
-					if (start >= appointment.start and start <= appointment.end) or (end >= appointment.start and end <= appointment.end):
-						sortedAppointment.level += 1
-						
-			appointments.append(sortedAppointment)
+	var appointments = setLevel()
 				
 	for i in 7:
 		var newDay = dayScene.instance()
@@ -52,18 +35,6 @@ func _ready():
 		newDay.setMonth(month + inverted as int)
 		newDay.setColor(color[0] as Color)
 		newDay.rect_min_size = Vector2(1100, 933)
-		var sortedAppointments = Array()
-		for appointment in appointments: # appointment: { start: int, end: int, color: Color, level: int, weight: int }
-			if appointment.start.day() <= date and appointment.end.day() >= date:
-				sortedAppointments.append(appointment)
-		sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
-		var currentLevel = 0
-		for j in sortedAppointments.size():
-			var appointment = sortedAppointments[j]
-			if appointment.level != j:
-				newDay.addPlaceholderAppointment(appointment.level - currentLevel)
-			newDay.addAppointment(sortedAppointments[j])
-			currentLevel = appointment.level + 1
 		newDay.lastDay = false
 		if i == 6:
 			newDay.lastDay = true
@@ -75,12 +46,13 @@ func _ready():
 		newDayHQ.set_mouse_filter(Control.MOUSE_FILTER_PASS)
 		newDayHQ.rect_min_size = Vector2(1100, 933)
 		newDayHQ.setColor(color[0] as Color)
-		newDayHQ.addAppointmentList(sortedAppointments)
 		newDayHQ.setDate(date)
 		newDayHQ.setMonth(month + inverted as int)
 		newDayHQ.connect("updateDayHover", self, "updateDayHover")
 		newDayHQ.connect("updateDayClick", self, "updateDayClick")
 		highQualityDayList.append(newDayHQ)
+		
+		setDayAppointments(newDay, newDayHQ, appointments)
 		
 		addDays()
 	pass
@@ -98,8 +70,14 @@ func setHighQuality(value):
 func invertColors():
 	color.invert()
 	
-func addAppointment(appointment):
-	appointmentList.append(appointment)
+func addAppointments(value):
+	appointmentList = []
+	appointmentList.append_array(value)
+	var appointments = setLevel()
+	for i in dayList.size():
+		var day = dayList[i]
+		var HQDay = highQualityDayList[i]
+		setDayAppointments(day, HQDay, appointments)
 		
 func setWeight(appointments, startDate):
 	for appointment in appointments:
@@ -152,7 +130,48 @@ static func delete_children(node):
 		
 func setMonth(value):
 	month = value
+	
+func setLevel():
+	setWeight(appointmentList, startDate + 7 - 1)
+	appointmentList.sort_custom(sortAppointments, "sortByWeight")
+	
+	var appointments = Array()
+	for sortedAppointment in appointmentList:
+		sortedAppointment.level = 0
+		if appointments.size() == 0:
+			appointments.append(sortedAppointment)
+		else:
+			appointments.sort_custom(sortAppointments, "sortByLevel")
+			for appointment in appointments:
+				if sortedAppointment.level == appointment.level:
+					var start = sortedAppointment.start
+					var end = sortedAppointment.end
+					if (start >= appointment.start and start <= appointment.end) or (end >= appointment.start and end <= appointment.end):
+						sortedAppointment.level += 1
+						
+			appointments.append(sortedAppointment)
+	return appointments
 		
+func setDayAppointments(day, HQDay, appointments):
+	day.clearAppointments()
+	HQDay.clearAppointments()
+	var date = day.date as int
+	var sortedAppointments = Array()
+	for appointment in appointments: # appointment: { start: int, end: int, color: Color, level: int, weight: int }
+		if appointment.start.day() <= date and appointment.end.day() >= date:
+			sortedAppointments.append(appointment)
+	sortedAppointments.sort_custom(sortAppointments, "sortByLevel")
+	var currentLevel = 0
+	for j in sortedAppointments.size():
+		var appointment = sortedAppointments[j]
+		if appointment.level != j:
+			day.addPlaceholderAppointment(appointment.level - currentLevel)
+		day.addAppointmentList(sortedAppointments[j])
+		currentLevel = appointment.level + 1
+	day.addAppointments()
+	HQDay.addAppointmentList(sortedAppointments)
+	HQDay.setAppointments()
+
 func updateDayHover(value):
 	emit_signal("updateWeekHover", value)
 	pass
@@ -160,3 +179,4 @@ func updateDayHover(value):
 func updateDayClick(value):
 	emit_signal("updateWeekClick", value)
 	pass
+

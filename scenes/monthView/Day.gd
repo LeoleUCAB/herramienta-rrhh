@@ -15,6 +15,7 @@ var date: String = "01" setget setDate
 var month: int = 1 setget setMonth
 var color: Color = Color("d9d9d9") setget setColor
 var appointmentList: Array = Array()
+var appointmentRects: Array = Array()
 var lastDay: bool = false
 
 signal updateDayHover(dayValue)
@@ -25,15 +26,8 @@ func _ready():
 		date = "0" + date
 	dayLabel.text = date
 	dayRect.color = color
-	for appointmentItem in appointmentList:
-		var newAppointment = ColorRect.new()
-		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_PASS)
-		var rectSize = Vector2(1000, 50)
-#		if date as int == appointmentItem.end or lastDay:
-#			rectSize += Vector2(1100 * (appointmentItem.weight - 1), 0)
-		newAppointment.rect_min_size = rectSize
-		newAppointment.color = appointmentItem.color
-		grid.add_child(newAppointment)
+	addAppointments()
+	
 #		prints("appointment at", appointmentItem.start.day(), "/", appointmentItem.start.month(), "/", appointmentItem.start.year())
 	pass
 	
@@ -46,12 +40,32 @@ func setMonth(value):
 func setColor(value):
 	color = value as Color
 	
-func addAppointment(appointment): #value = {start, end, color}
+func addAppointmentList(appointment):
 	appointmentList.append(appointment)
 	
 func addPlaceholderAppointment(value):
 	for i in value:
 		appointmentList.append(placeholderAppointment)
+		
+func addAppointments():
+	for appointmentItem in appointmentList:
+		var newAppointment = ColorRect.new()
+		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_PASS)
+		var rectSize = Vector2(1000, 50)
+#		if date as int == appointmentItem.end or lastDay:
+#			rectSize += Vector2(1100 * (appointmentItem.weight - 1), 0)
+		newAppointment.rect_min_size = rectSize
+		newAppointment.color = appointmentItem.color
+		if grid != null:
+			grid.add_child(newAppointment)
+		appointmentRects.append(newAppointment)
+		
+func clearAppointments():
+	appointmentList = []
+	for rect in appointmentRects:
+		grid.remove_child(rect)
+		rect.queue_free()
+	appointmentRects = []
 
 func _on_mouse_entered():
 	emit_signal("updateDayHover", month)

@@ -1,6 +1,7 @@
 extends Control
 
 var appointmentList: Array = Array()
+var appointmentRects: Array = Array()
 var maxColumns = 1
 var color: Color = Color.white
 var date: int = 1 setget setDate
@@ -40,25 +41,7 @@ func _ready():
 	appointmentList.sort_custom(sortAppointments, "sortByWeight")
 	setLevel()
 	appointmentList.sort_custom(sortAppointments, "sortByLevel")
-	for i in hours.size():
-		var hourAppointments = Array()
-		var hour = hours[i]
-		var currentTime = i + 6
-		if i == 0:
-			for appointment in appointmentList:
-				if appointment.isItDaylong:
-					hourAppointments.append(appointment)
-		else:
-			for appointment in appointmentList:
-				if !appointment.isItDaylong:
-					if i == 1 && appointment.hour.start < 8:
-						hourAppointments.append(appointment)
-					elif i == hours.size() - 1 && appointment.hour.end > 17:
-						hourAppointments.append(appointment)
-					elif currentTime >= appointment.hour.start && currentTime <= appointment.hour.end:
-						hourAppointments.append(appointment)
-		if !hourAppointments.empty():
-			addAppointment(hour, hourAppointments, currentTime)
+	setAppointments()
 	pass
 
 func setColor(value):
@@ -135,77 +118,8 @@ func addAppointment(hour, appointments, currentTime):
 		newAppointment.rect_min_size = rectSize
 		newAppointment.set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 		hour.add_child(newAppointment)
+		appointmentRects.append({"grid": hour, "obj": newAppointment})
 	
-#
-#func generateRandomAppointments():
-#	var rng = RandomNumberGenerator.new()
-#	rng.randomize()
-#	var colorList = [
-#		Color.aqua,
-#		Color.coral,
-#		Color.indigo,
-#		Color.orangered,
-#		Color.orchid,
-#		Color.gold
-#	]
-##	for i in range(rng.randi_range(0, 6)):
-##		var start = rng.randi_range(0, 24)
-##		var end = rng.randi_range(start, 24)
-##		var color = colorList[i]
-##		var newAppointment = {
-##			"start": start,
-##			"end": end,
-##			"color": color,
-##			"weight": null,
-##			"level": null
-##		}
-##		appointmentList.append(newAppointment)
-#	var debugAppointment = [
-#		{
-#			"start": 2,
-#			"end": 24,
-#			"color": colorList[0],
-#			"weight": null,
-#			"level": null
-#		},
-#		{
-#			"start": 12,
-#			"end": 17,
-#			"color": colorList[1],
-#			"weight": null,
-#			"level": null
-#		},
-#		{
-#			"start": 11,
-#			"end": 15,
-#			"color": colorList[2],
-#			"weight": null,
-#			"level": null
-#		},
-#		{
-#			"start": 10,
-#			"end": 13,
-#			"color": colorList[3],
-#			"weight": null,
-#			"level": null
-#		},
-#		{
-#			"start": 9,
-#			"end": 11,
-#			"color": colorList[4],
-#			"weight": null,
-#			"level": null
-#		},
-#		{
-#			"start": 8,
-#			"end": 9,
-#			"color": colorList[5],
-#			"weight": null,
-#			"level": null
-#		}
-#	]
-#	appointmentList.append_array(debugAppointment)
-#
 func generateRandomAppointments():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
@@ -240,6 +154,38 @@ func generateRandomAppointments():
 
 func addAppointmentList(valueList):
 	appointmentList.append_array(valueList)
+	
+func setHourAppointments(i):
+	var hour = hours[i]
+	var currentTime = i + 6
+	var hourAppointments = Array()
+	if i == 0:
+		for appointment in appointmentList:
+			if appointment.isItDaylong:
+				hourAppointments.append(appointment)
+	else:
+		for appointment in appointmentList:
+			if !appointment.isItDaylong:
+				if i == 1 && appointment.hour.start < 8:
+					hourAppointments.append(appointment)
+				elif i == hours.size() - 1 && appointment.hour.end > 17:
+					hourAppointments.append(appointment)
+				elif currentTime >= appointment.hour.start && currentTime <= appointment.hour.end:
+					hourAppointments.append(appointment)
+	if !hourAppointments.empty():
+		addAppointment(hour, hourAppointments, currentTime)
+		
+func clearAppointments():
+	appointmentList = []
+	for rectObj in appointmentRects:
+		rectObj.grid.remove_child(rectObj.obj)
+		rectObj.obj.queue_free()
+	appointmentRects = []
+	
+func setAppointments():
+	if hours != null:
+		for i in hours.size():
+			setHourAppointments(i)
 
 class sortAppointments:
 	static func sortByStartDate(a, b):
