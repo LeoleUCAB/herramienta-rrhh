@@ -175,9 +175,9 @@ func setPagination(value):
 	for i in range(newMonthList.size()):
 		var year = 1951 + i
 		var yearItem = newMonthList[i]
+		var yearAppointments = []
+		var monthPagination = {}
 		if pagination.has(year):
-			var yearAppointments = []
-			var monthPagination = {}
 			for index in pagination[year]:
 				var month = appointmentList[index].start.month()
 				yearAppointments.append(appointmentList[index])
@@ -185,10 +185,10 @@ func setPagination(value):
 					monthPagination[month] = [yearAppointments.size() - 1]
 					continue
 				monthPagination[month].append(yearAppointments.size() - 1)
-			for monthItem in yearItem:
-				var month = monthItem.month + 1
-				if monthPagination.has(month):
-					var monthAppointments = []
-					for index in monthPagination[month]:
-						monthAppointments.append(yearAppointments[index])
-					monthItem.appointmentList = monthAppointments
+		for monthItem in yearItem:
+			var month = monthItem.month + 1
+			var monthAppointments = []
+			if monthPagination.has(month):
+				for index in monthPagination[month]:
+					monthAppointments.append(yearAppointments[index])
+			monthItem.appointmentList = monthAppointments

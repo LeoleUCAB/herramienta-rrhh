@@ -4,9 +4,10 @@ export var filterItem: PackedScene
 
 onready var grid = $FilterGrid
 
-var toggled: bool = false
+var currentMenu: bool = false
 var defaultPosition
 var userList = [] setget setUserList
+var filterItemList = []
 
 signal checkBoxToggle(toggleValue)
 
@@ -18,7 +19,7 @@ func _ready():
 
 
 func _process(delta):
-	if toggled:
+	if currentMenu:
 		if rect_position.x > defaultPosition:
 			var newPosition = rect_position.x - 200 * delta
 			if newPosition < defaultPosition:
@@ -31,8 +32,14 @@ func _process(delta):
 	pass
 
 
-func _on_FilterButton_pressed():
-	toggled = !toggled
+func changeState(value):
+	currentMenu = value
+
+func deleteUserList():
+	for item in filterItemList:
+		grid.remove_child(item)
+		item.queue_free()
+	filterItemList = []
 
 func setUserList(value):
 	userList = value # {name: String, id: int}
@@ -44,6 +51,7 @@ func setUserList(value):
 		newFilterItem.id = user.id
 		newFilterItem.rect_min_size.y = 24
 		newFilterItem.connect("checkBoxToggle", self, "checkBoxToggle")
+		filterItemList.append(newFilterItem)
 		grid.add_child(newFilterItem)
 	
 func checkBoxToggle(toggleValue):

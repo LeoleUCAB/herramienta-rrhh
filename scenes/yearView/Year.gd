@@ -98,4 +98,4 @@ func setPagination():
 						monthPagination[day] = [index]
 						continue
 					monthPagination[day].append(index)
-			monthItem.pagination = monthPagination
+		monthItem.pagination = monthPagination

@@ -1,5 +1,14 @@
 extends Node2D
 
+const NO_MENU = -1
+const YEAR_CAM = 0
+const MONTH_CAM = 1
+const FILTER_MENU = 2
+const SETTING_MENU = 3
+const COLOR_INDEX_DEFAULT = 0
+const COLOR_INDEX_COLORBLIND_WONG = 1
+const COLOR_INDEX_COLORBLIND_TOLB = 2
+
 onready var yearCamera = $YearRoulette/Camera2D
 onready var monthCamera = $MonthRoulette/Camera2D
 
@@ -9,20 +18,50 @@ onready var monthRoulette = $MonthRoulette/ScrollContainer
 onready var dateFinder = $HUD/MainBanner/DateFinder
 
 onready var filter = $HUD/FilterMenu
+onready var settings = $HUD/SettingsMenu
 
 var pagination = {}
 var appointmentList = []
 var currentCam: int
 var userList = []
 var filterDict = {}
+var currentMenu = NO_MENU
+var currentColor = COLOR_INDEX_DEFAULT
+
+var defaultColorList = [
+	Color.red,
+	Color.blue,
+	Color.yellow,
+	Color.green,
+	Color.orange,
+	Color.purple
+]
+
+var wongColorList = [
+	Color(0, 0, 0, 1),
+	Color(230.0/255, 159.0/255, 0, 1),
+	Color(86.0/255, 180.0/255, 233.0/255, 1),
+	Color(0, 158.0/255, 115.0/255, 1),
+	Color(240.0/255, 228.0/255, 66.0/255, 1),
+	Color(0, 114.0/255, 178.0/255, 1),
+	Color(213.0/255, 94.0/255, 0, 1),
+	Color(204.0/255, 121.0/255, 167.0/255, 1)
+]
+
+var tolBrightColorList = [
+	Color(68.0/255, 119.0/255, 170.0/255, 1),
+	Color(102.0/255, 204.0/255, 238.0/255, 1),
+	Color(34.0/255, 136.0/255, 51.0/255, 1),
+	Color(204.0/255, 187.0/255, 68.0/255, 1),
+	Color(238.0/255, 102.0/255, 119.0/255, 1),
+	Color(170.0/255, 51.0/255, 119.0/255, 1)
+]
 
 var currentDate = {
 	"year": 1951,
 	"month": 1
 }
 
-const YEAR_CAM = 0
-const MONTH_CAM = 1
 
 func _ready():
 	appointmentList = generateRandomAppointments()
@@ -82,47 +121,40 @@ func goToDate(date):
 func generateRandomAppointments():
 	var randomAppointments = []
 	var rng = RandomNumberGenerator.new()
-	var colorList = [
-		Color.red,
-		Color.blue,
-		Color.yellow,
-		Color.green,
-		Color.orange,
-		Color.purple
-	]
 	var defaultUserList = [
 		{
 			"name": "Alan",
 			"id": 1,
-			"color": colorList[0]
+			"color": null
 		},
 		{
 			"name": "Bea",
 			"id": 2,
-			"color": colorList[1]
+			"color": null
 		},
 		{
 			"name": "Chris",
 			"id": 3,
-			"color": colorList[2]
+			"color": null
 		},
 		{
 			"name": "Dylan",
 			"id": 4,
-			"color": colorList[3]
+			"color": null
 		},
 		{
 			"name": "Earl",
 			"id": 5,
-			"color": colorList[4]
+			"color": null
 		},
 		{
 			"name": "Frank",
 			"id": 6,
-			"color": colorList[5]
+			"color": null
 		}
 	]
 	userList = defaultUserList
+	setColors(userList)
 	for userItem in defaultUserList:
 		filterDict[userItem.id] = true
 	for i in 20:
@@ -157,8 +189,8 @@ func generateRandomAppointments():
 			hour.start = rng.randi_range(0, 24)
 			hour.end = rng.randi_range(hour.start, 24)
 			
-		var user = defaultUserList[rng.randi_range(0, 4)]
-		var color = colorList[user.id - 1]
+		var user = userList[rng.randi_range(0, 4)]
+		var color = setAppointmentColor(user)
 		
 		
 		var newAppointment = {
@@ -175,6 +207,14 @@ func generateRandomAppointments():
 		randomAppointments.append(newAppointment)
 	return randomAppointments
 
+func setColors(userList):
+	var currentColorList = getCurrentColorList()
+	for user in userList:
+		user.color = currentColorList[user.id % currentColorList.size()]
+			
+func setAppointmentColor(user):
+	var currentColorList = getCurrentColorList()
+	return currentColorList[user.id % currentColorList.size()]
 
 func getDaysInMonth(month, year):
 	var isLeapYear: bool
@@ -229,6 +269,58 @@ func printDates(list):
 		
 func checkBoxToggle(toggleValue):
 	filterDict[toggleValue.id] = toggleValue.state
+	paginate(appointmentList)
+	yearRoulette.setPagination(pagination, false)
+	monthRoulette.setPagination(pagination)
+
+
+func _on_FilterButton_pressed():
+	match currentMenu:
+		NO_MENU:
+			currentMenu = FILTER_MENU
+			filter.changeState(true)
+		FILTER_MENU:
+			currentMenu = NO_MENU
+			filter.changeState(false)
+		SETTING_MENU:
+			currentMenu = FILTER_MENU
+			filter.changeState(true)
+			settings.changeState(false)
+
+
+func _on_SettingsButton_pressed():
+	match currentMenu:
+		NO_MENU:
+			currentMenu = SETTING_MENU
+			settings.changeState(true)
+		SETTING_MENU:
+			currentMenu = NO_MENU
+			settings.changeState(false)
+		FILTER_MENU:
+			currentMenu = SETTING_MENU
+			settings.changeState(true)
+			filter.changeState(false)
+
+func getCurrentColorList():
+	match currentColor:
+		COLOR_INDEX_DEFAULT:
+			return defaultColorList
+		COLOR_INDEX_COLORBLIND_WONG:
+			return wongColorList
+		COLOR_INDEX_COLORBLIND_TOLB:
+			return tolBrightColorList
+		_:
+			return defaultColorList
+
+func _changeAppColor(index):
+	currentColor = index
+	setColors(userList)
+	for appointment in appointmentList:
+		appointment.color = setAppointmentColor(appointment.user)
+	
+	filter.deleteUserList()
+	filter.setUserList(userList)
+	
 	paginate(appointmentList)
 	yearRoulette.setPagination(pagination, false)
 	monthRoulette.setPagination(pagination)
