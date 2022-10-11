@@ -18,6 +18,8 @@ func _ready():
 
 func setDayNumber(value):
 	dayNumber = value
+	if value < 1:
+		set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	dayNumberLabel.text = value as String
 		
 func _on_Day_gui_input(event):
