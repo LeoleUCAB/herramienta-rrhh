@@ -125,8 +125,8 @@ static func delete_children(node):
 
 # I really don't ike this implementation BUT IT WORKS
 # This stops the scroll window from scrolling if you're using the wheel for anything else.
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton and (event.button_index == BUTTON_WHEEL_DOWN || event.button_index == BUTTON_WHEEL_UP):
+func _input(ev: InputEvent) -> void:
+	if (ev is InputEventMouseButton and (ev.button_index == BUTTON_WHEEL_DOWN || ev.button_index == BUTTON_WHEEL_UP)) and Input.is_action_pressed("zoom_toggle"):
 		set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	else:
 		set_mouse_filter(Control.MOUSE_FILTER_STOP)

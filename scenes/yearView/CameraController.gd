@@ -36,13 +36,13 @@ func _input(event):
 			_drag = true
 		elif event.is_action_released("cam_drag"):
 			_drag = false
+		elif event is InputEventMouseMotion && _drag:
+			set_offset(Vector2(get_offset()[0] - event.relative[0]*_current_zoom_level, get_offset()[1]))
 		elif Input.is_action_pressed("zoom_toggle"):
 			if event.is_action("cam_zoom_in"):
 				_update_zoom(-ZOOM_INCREMENT * deltaValue * 100, get_local_mouse_position())
 			elif event.is_action("cam_zoom_out"):
 				_update_zoom(ZOOM_INCREMENT * deltaValue * 100, get_local_mouse_position())
-			elif event is InputEventMouseMotion && _drag:
-				set_offset(Vector2(get_offset()[0] - event.relative[0]*_current_zoom_level, get_offset()[1]))
 			
 		if event.is_action_pressed("sector_1"):
 			set_offset(Vector2(0, get_offset()[1]))

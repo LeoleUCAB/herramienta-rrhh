@@ -60,6 +60,9 @@ func _ready():
 	set_v_scroll(ITEM_HEIGHT*(2022-1950))
 	_on_scroll_ended()
 	pass
+	
+func _process(delta):
+	pass
 
 func _on_scroll_ended():
 	var currentVPos = get_v_scroll()
