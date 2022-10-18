@@ -5,6 +5,8 @@ onready var scrollContainer = $"."
 export var yearScene: PackedScene
 export var loadingPlaceholderScene: PackedScene
 
+var timer
+var timerWasReset: bool = false
 var pagination = {} setget setPagination
 var appointmentList = []
 var newYearList: Array
@@ -36,6 +38,8 @@ const ITEM_MONTH_HEIGHT = 3000
 const YEAR_LABEL_HEIGHT = 2483
 
 func _ready():
+	timer = createTimer(1)
+	
 	for i in range(MAX_SIZE):
 		var year = 1950 + i
 		var placeholder = loadingPlaceholderScene.instance()
@@ -62,6 +66,9 @@ func _ready():
 	pass
 	
 func _process(delta):
+	if timer.time_left == 0 and timerWasReset:
+		_on_scroll_ended()
+		timerWasReset = false
 	pass
 
 func _on_scroll_ended():
@@ -91,6 +98,11 @@ func _input(ev: InputEvent) -> void:
 		set_mouse_filter(Control.MOUSE_FILTER_IGNORE)
 	else:
 		set_mouse_filter(Control.MOUSE_FILTER_STOP)
+	if (Input.is_action_just_released("cam_zoom_in", true) or Input.is_action_just_released("cam_zoom_out", true)):
+		timer.start()
+		timerWasReset = true
+	if (Input.is_action_just_pressed("cam_zoom_in", true) or Input.is_action_just_pressed("cam_zoom_out", true)):
+		timer.stop()
 	
 #	if ev is InputEventMouseButton:
 #		if ev.pressed:
@@ -164,3 +176,10 @@ func setPagination(value, default=true):
 			yearItem.pagination = yearPagination
 		if !default:
 			yearItem.setPagination()
+			
+func createTimer(time):
+	var t = Timer.new()
+	t.set_wait_time(time)
+	t.set_one_shot(true)
+	self.add_child(t)
+	return t
